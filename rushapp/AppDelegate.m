@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "Fraternity.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -22,6 +23,15 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    /*
+    NSString * acacia = @"ACACIA";
+    NSString * address = @"201 w lakelawn pl";
+    NSMutableArray * contactList = [[NSMutableArray alloc] init];
+    [contactList addObject:@"Paul Hurlbut"];
+    NSMutableArray * eventList =[[NSMutableArray alloc] init];
+    [eventList addObject:@"Steak and Cigars"];
+    Fraternity * f = [[Fraternity alloc] initWithName:acacia Address:address ContactList:contactList EventList:eventList];
+    NSLog(@"%@",f); */
     return YES;
     
 }
