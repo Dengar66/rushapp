@@ -16,6 +16,7 @@
 		515217DC1BE3F04000C29A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515217DA1BE3F04000C29A59 /* LaunchScreen.storyboard */; };
 		515217E71BE3F04000C29A59 /* rushappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217E61BE3F04000C29A59 /* rushappTests.m */; };
 		515217F21BE3F04000C29A59 /* rushappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217F11BE3F04000C29A59 /* rushappUITests.m */; };
+		749A635E1BE6C69700F282A3 /* Fraternity.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A635D1BE6C69700F282A3 /* Fraternity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		515217ED1BE3F04000C29A59 /* rushappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rushappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515217F11BE3F04000C29A59 /* rushappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rushappUITests.m; sourceTree = "<group>"; };
 		515217F31BE3F04000C29A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749A635D1BE6C69700F282A3 /* Fraternity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraternity.m; sourceTree = "<group>"; };
+		749A635F1BE6C6B100F282A3 /* Fraternity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraternity.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				515217CD1BE3F04000C29A59 /* AppDelegate.m */,
 				515217CF1BE3F04000C29A59 /* MasterViewController.h */,
 				515217D01BE3F04000C29A59 /* MasterViewController.m */,
+				749A635F1BE6C6B100F282A3 /* Fraternity.h */,
+				749A635D1BE6C69700F282A3 /* Fraternity.m */,
 				515217D21BE3F04000C29A59 /* DetailViewController.h */,
 				515217D31BE3F04000C29A59 /* DetailViewController.m */,
 				515217D51BE3F04000C29A59 /* Main.storyboard */,
@@ -277,6 +282,7 @@
 			files = (
 				515217CE1BE3F04000C29A59 /* AppDelegate.m in Sources */,
 				515217D11BE3F04000C29A59 /* MasterViewController.m in Sources */,
+				749A635E1BE6C69700F282A3 /* Fraternity.m in Sources */,
 				515217CB1BE3F04000C29A59 /* main.m in Sources */,
 				515217D41BE3F04000C29A59 /* DetailViewController.m in Sources */,
 			);
@@ -502,6 +508,7 @@
 				515217F81BE3F04000C29A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		515217F91BE3F04000C29A59 /* Build configuration list for PBXNativeTarget "rushappTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				515217FB1BE3F04000C29A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		515217FC1BE3F04000C29A59 /* Build configuration list for PBXNativeTarget "rushappUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				515217FE1BE3F04000C29A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
