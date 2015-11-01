@@ -10,7 +10,9 @@
 @interface Fraternity : NSObject
 
 @property (nonatomic) NSString * name;
-@property (nonatomic) int amount;
+@property (nonatomic) NSMutableArray * contactList;
+@property (nonatomic) NSMutableArray * eventList;
+@property (nonatomic) NSString * address;
 
 -(instancetype)initWithName:(NSString *) name;
 @end

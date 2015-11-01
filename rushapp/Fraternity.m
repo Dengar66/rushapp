@@ -18,6 +18,7 @@
     if(self)
     {
         self.name = name;
+        self.address = " ";
     }
     return self;
 }
