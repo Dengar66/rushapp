@@ -21,6 +21,10 @@
 		515218171BE6CB3100C29A59 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 515218121BE6CB3100C29A59 /* MMDrawerVisualState.m */; };
 		515218181BE6CB3100C29A59 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 515218141BE6CB3100C29A59 /* UIViewController+MMDrawerController.m */; };
 		749A635E1BE6C69700F282A3 /* Fraternity.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A635D1BE6C69700F282A3 /* Fraternity.m */; };
+		749A63611BE6D04700F282A3 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A63601BE6D04700F282A3 /* Event.m */; };
+		74B01ABB1BE6E6F30030EA9B /* FraternityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B01ABA1BE6E6F30030EA9B /* FraternityListViewController.m */; };
+		74E66E011BE6D86E00431B57 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E66E001BE6D86E00431B57 /* Contact.m */; };
+		74E66E041BE6DA2B00431B57 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E66E031BE6DA2B00431B57 /* Database.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,14 @@
 		515218141BE6CB3100C29A59 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		749A635D1BE6C69700F282A3 /* Fraternity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraternity.m; sourceTree = "<group>"; };
 		749A635F1BE6C6B100F282A3 /* Fraternity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraternity.h; sourceTree = "<group>"; };
+		749A63601BE6D04700F282A3 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		749A63621BE6D05500F282A3 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		74B01ABA1BE6E6F30030EA9B /* FraternityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityListViewController.m; sourceTree = "<group>"; };
+		74B01ABC1BE6E7040030EA9B /* FraternityListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FraternityListViewController.h; sourceTree = "<group>"; };
+		74E66DFF1BE6D84600431B57 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		74E66E001BE6D86E00431B57 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		74E66E021BE6DA0E00431B57 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		74E66E031BE6DA2B00431B57 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +145,16 @@
 				515217CD1BE3F04000C29A59 /* AppDelegate.m */,
 				515217CF1BE3F04000C29A59 /* MasterViewController.h */,
 				515217D01BE3F04000C29A59 /* MasterViewController.m */,
+				74B01ABC1BE6E7040030EA9B /* FraternityListViewController.h */,
+				74B01ABA1BE6E6F30030EA9B /* FraternityListViewController.m */,
 				749A635F1BE6C6B100F282A3 /* Fraternity.h */,
 				749A635D1BE6C69700F282A3 /* Fraternity.m */,
+				749A63621BE6D05500F282A3 /* Event.h */,
+				749A63601BE6D04700F282A3 /* Event.m */,
+				74E66DFF1BE6D84600431B57 /* Contact.h */,
+				74E66E001BE6D86E00431B57 /* Contact.m */,
+				74E66E021BE6DA0E00431B57 /* Database.h */,
+				74E66E031BE6DA2B00431B57 /* Database.m */,
 				515217D21BE3F04000C29A59 /* DetailViewController.h */,
 				515217D31BE3F04000C29A59 /* DetailViewController.m */,
 				515217D51BE3F04000C29A59 /* Main.storyboard */,
@@ -304,12 +324,16 @@
 			files = (
 				515217CE1BE3F04000C29A59 /* AppDelegate.m in Sources */,
 				515218151BE6CB3100C29A59 /* MMDrawerBarButtonItem.m in Sources */,
+				749A63611BE6D04700F282A3 /* Event.m in Sources */,
 				515218161BE6CB3100C29A59 /* MMDrawerController.m in Sources */,
 				515217D11BE3F04000C29A59 /* MasterViewController.m in Sources */,
 				515218171BE6CB3100C29A59 /* MMDrawerVisualState.m in Sources */,
 				749A635E1BE6C69700F282A3 /* Fraternity.m in Sources */,
+				74E66E011BE6D86E00431B57 /* Contact.m in Sources */,
+				74B01ABB1BE6E6F30030EA9B /* FraternityListViewController.m in Sources */,
 				515218181BE6CB3100C29A59 /* UIViewController+MMDrawerController.m in Sources */,
 				515217CB1BE3F04000C29A59 /* main.m in Sources */,
+				74E66E041BE6DA2B00431B57 /* Database.m in Sources */,
 				515217D41BE3F04000C29A59 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
