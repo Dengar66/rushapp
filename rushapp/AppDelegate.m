@@ -19,9 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //UIViewController *viewController = (UIViewController *)self.window.rootViewController;
-    //UINavigationController *navigationController = UIViewController.viewController;
-    //navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     return YES;
     
 }
@@ -48,6 +45,7 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+/*
 #pragma mark - Split view
 
 - (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
@@ -57,6 +55,6 @@
     } else {
         return NO;
     }
-}
+}*/
 
 @end

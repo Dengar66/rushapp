@@ -8,7 +8,7 @@
         <!--EventView-->
         <scene sceneID="TGI-tp-gGP">
             <objects>
-                <tableViewController title="EventView" id="3ig-O2-m5f" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EventView" title="EventView" id="3ig-O2-m5f" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wkV-6N-UFD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
