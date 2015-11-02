@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "Fraternity.h"
 
-@interface AppDelegate () <UISplitViewControllerDelegate>
+@interface AppDelegate () <UIApplicationDelegate>
 
 @end
 

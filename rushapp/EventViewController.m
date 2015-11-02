@@ -38,7 +38,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = self.eventList[indexPath.row];
+    cell.textLabel.text = @"test"; //self.eventList[indexPath.row];
     return cell;
 }
 
