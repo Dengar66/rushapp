@@ -339,87 +339,38 @@ Above all, we want you to have a good time during recruitment, so take advantage
         <!--Fraternity List Controller-->
         <scene sceneID="rTA-Ql-U5O">
             <objects>
-                <tableViewController title="Fraternity List Controller" id="OYu-xO-4Gp" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nga-a8-PXe">
+                <tableViewController title="Fraternity List Controller" id="OYu-xO-4Gp" customClass="FraternityListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nga-a8-PXe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Nou-BS-A1U">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="j9s-9t-uT5" style="IBUITableViewCellStyleDefault" id="adS-cc-8Be">
-                                        <rect key="frame" x="0.0" y="64" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adS-cc-8Be" id="EU7-DZ-EUd">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ACACIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j9s-9t-uT5">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="j9s-9t-uT5" style="IBUITableViewCellStyleDefault" id="adS-cc-8Be">
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adS-cc-8Be" id="EU7-DZ-EUd">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j9s-9t-uT5">
+                                            <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="TcC-ab-a1H" kind="push" id="YYf-DO-bDM"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="odf-ba-A6t" style="IBUITableViewCellStyleDefault" id="iHK-bv-X3b">
-                                        <rect key="frame" x="0.0" y="108" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iHK-bv-X3b" id="j2u-vI-ogJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Theta Chi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="odf-ba-A6t">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="K5E-DK-hqN" kind="push" id="07U-wp-IXe"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fq6-lJ-v64" style="IBUITableViewCellStyleDefault" id="BYN-ot-zj0">
-                                        <rect key="frame" x="0.0" y="152" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BYN-ot-zj0" id="TE5-D7-dt2">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Triangle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fq6-lJ-v64">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="h6i-9V-bEG" kind="push" id="4Cq-AH-Bxx"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="TcC-ab-a1H" kind="push" id="YYf-DO-bDM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="OYu-xO-4Gp" id="wBp-rX-Cet"/>
                             <outlet property="delegate" destination="OYu-xO-4Gp" id="aJP-Ca-Gr3"/>
@@ -443,18 +394,11 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XVj-6i-U3b">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVj-6i-U3b">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">ACACIA
-
-Acacia is a smaller social fraternity on campus. It primarily focuses on brotherhood.
-
-Address:
-201 W. Lakelawn Place
-Madison, WI 53703</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -466,42 +410,6 @@ Madison, WI 53703</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2n-ch-hAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1437" y="-706"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="O4K-ic-4w8">
-            <objects>
-                <viewController id="K5E-DK-hqN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VzE-Zm-hXN"/>
-                        <viewControllerLayoutGuide type="bottom" id="bg7-VH-KUi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4qo-Yf-sL1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zj3-nE-P7I">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Theta Chi
-
-Men join fraternities. Leaders of men join Theta Chi. Theta Chi Fraternity is centered on the core values of Truth, Temperance, and Tolerance.
-
-Address:
-210 Langdon Street
-Madison, WI 53703</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Zrw-rP-xig"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HFO-XV-0oV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1907" y="-706"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W7w-6h-hHX">
@@ -528,42 +436,6 @@ Madison, WI 53703</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNe-mD-Fcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1437" y="92"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="WLN-pa-Ueb">
-            <objects>
-                <viewController id="h6i-9V-bEG" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wv3-K7-vKP"/>
-                        <viewControllerLayoutGuide type="bottom" id="TR0-R5-idv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nc3-ft-ev3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-2f-U8Y">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Triangle
-
-Triangle is a social fraternity geared to engineering students because of location. We are lucky to have 2 great houses connected underground on Breese Terrace right across from the student gate of Camp Randall.
-
-Address:
-148 Breese Terrace
-Madison, WI 53726</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ugi-QK-pxk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xaX-jj-MS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1907" y="92"/>
         </scene>
         <!--Event Feed Controller-->
         <scene sceneID="6dg-M5-ccQ">

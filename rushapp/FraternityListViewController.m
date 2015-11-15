@@ -30,7 +30,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *identifier = @"identifier";
+    NSString *identifier = @"cell";
     
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     

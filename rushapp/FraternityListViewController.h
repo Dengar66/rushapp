@@ -7,7 +7,7 @@
 //
 #import <UIKit/UIKit.h>
 
-@interface FraternityListViewController : UIViewController <UITableViewDelegate>
+@interface FraternityListViewController : UITableViewController <UITableViewDelegate>
 
 @property (nonatomic) NSArray * fraternityList;
 @end
