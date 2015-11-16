@@ -9,9 +9,7 @@
 @class Database;
 
 @interface FraternityListViewController : UITableViewController <UITableViewDelegate>
-{
-    NSMutableArray * fraternityList;
-}
+
 
 @property (nonatomic) NSArray * fraternityList;
 @end

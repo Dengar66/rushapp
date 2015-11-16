@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5111E7FD1BE6F9FE00BFAC8A /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5111E7FC1BE6F9FE00BFAC8A /* EventViewController.m */; };
 		515217CB1BE3F04000C29A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217CA1BE3F04000C29A59 /* main.m */; };
 		515217CE1BE3F04000C29A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217CD1BE3F04000C29A59 /* AppDelegate.m */; };
 		515217D71BE3F04000C29A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515217D51BE3F04000C29A59 /* Main.storyboard */; };
@@ -17,6 +16,9 @@
 		515217F21BE3F04000C29A59 /* rushappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217F11BE3F04000C29A59 /* rushappUITests.m */; };
 		747E19401BF93A17005D15EB /* FraternityInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */; };
 		747E19431BF93AC3005D15EB /* EventFeedTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */; };
+		747E19461BF95FC8005D15EB /* EventInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19451BF95FC8005D15EB /* EventInformationViewController.m */; };
+		747E19491BF95FF3005D15EB /* FraternityContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19481BF95FF3005D15EB /* FraternityContactListTableViewController.m */; };
+		747E194C1BF96013005D15EB /* FraternityEventListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E194B1BF96013005D15EB /* FraternityEventListTableViewController.m */; };
 		749A635E1BE6C69700F282A3 /* Fraternity.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A635D1BE6C69700F282A3 /* Fraternity.m */; };
 		749A63611BE6D04700F282A3 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A63601BE6D04700F282A3 /* Event.m */; };
 		74B01ABB1BE6E6F30030EA9B /* FraternityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B01ABA1BE6E6F30030EA9B /* FraternityListViewController.m */; };
@@ -42,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5111E7FB1BE6F9FE00BFAC8A /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
-		5111E7FC1BE6F9FE00BFAC8A /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 		515217C61BE3F04000C29A59 /* rushapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rushapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515217CA1BE3F04000C29A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		515217CC1BE3F04000C29A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -62,6 +62,12 @@
 		747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityInfoViewController.m; sourceTree = "<group>"; };
 		747E19411BF93AC3005D15EB /* EventFeedTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventFeedTableTableViewController.h; sourceTree = "<group>"; };
 		747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventFeedTableTableViewController.m; sourceTree = "<group>"; };
+		747E19441BF95FC8005D15EB /* EventInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventInformationViewController.h; path = ../EventInformationViewController.h; sourceTree = "<group>"; };
+		747E19451BF95FC8005D15EB /* EventInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventInformationViewController.m; path = ../EventInformationViewController.m; sourceTree = "<group>"; };
+		747E19471BF95FF3005D15EB /* FraternityContactListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FraternityContactListTableViewController.h; sourceTree = "<group>"; };
+		747E19481BF95FF3005D15EB /* FraternityContactListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityContactListTableViewController.m; sourceTree = "<group>"; };
+		747E194A1BF96013005D15EB /* FraternityEventListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FraternityEventListTableViewController.h; sourceTree = "<group>"; };
+		747E194B1BF96013005D15EB /* FraternityEventListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityEventListTableViewController.m; sourceTree = "<group>"; };
 		749A635D1BE6C69700F282A3 /* Fraternity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraternity.m; sourceTree = "<group>"; };
 		749A635F1BE6C6B100F282A3 /* Fraternity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraternity.h; sourceTree = "<group>"; };
 		749A63601BE6D04700F282A3 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
@@ -122,16 +128,20 @@
 		515217C81BE3F04000C29A59 /* rushapp */ = {
 			isa = PBXGroup;
 			children = (
-				5111E7FB1BE6F9FE00BFAC8A /* EventViewController.h */,
-				5111E7FC1BE6F9FE00BFAC8A /* EventViewController.m */,
 				515217CC1BE3F04000C29A59 /* AppDelegate.h */,
 				515217CD1BE3F04000C29A59 /* AppDelegate.m */,
+				747E19411BF93AC3005D15EB /* EventFeedTableTableViewController.h */,
+				747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */,
+				747E19441BF95FC8005D15EB /* EventInformationViewController.h */,
+				747E19451BF95FC8005D15EB /* EventInformationViewController.m */,
 				74B01ABC1BE6E7040030EA9B /* FraternityListViewController.h */,
 				74B01ABA1BE6E6F30030EA9B /* FraternityListViewController.m */,
 				747E193E1BF93A17005D15EB /* FraternityInfoViewController.h */,
 				747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */,
-				747E19411BF93AC3005D15EB /* EventFeedTableTableViewController.h */,
-				747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */,
+				747E19471BF95FF3005D15EB /* FraternityContactListTableViewController.h */,
+				747E19481BF95FF3005D15EB /* FraternityContactListTableViewController.m */,
+				747E194A1BF96013005D15EB /* FraternityEventListTableViewController.h */,
+				747E194B1BF96013005D15EB /* FraternityEventListTableViewController.m */,
 				749A635F1BE6C6B100F282A3 /* Fraternity.h */,
 				749A635D1BE6C69700F282A3 /* Fraternity.m */,
 				749A63621BE6D05500F282A3 /* Event.h */,
@@ -307,10 +317,12 @@
 			files = (
 				515217CE1BE3F04000C29A59 /* AppDelegate.m in Sources */,
 				749A63611BE6D04700F282A3 /* Event.m in Sources */,
+				747E19461BF95FC8005D15EB /* EventInformationViewController.m in Sources */,
 				749A635E1BE6C69700F282A3 /* Fraternity.m in Sources */,
+				747E194C1BF96013005D15EB /* FraternityEventListTableViewController.m in Sources */,
 				74E66E011BE6D86E00431B57 /* Contact.m in Sources */,
+				747E19491BF95FF3005D15EB /* FraternityContactListTableViewController.m in Sources */,
 				74B01ABB1BE6E6F30030EA9B /* FraternityListViewController.m in Sources */,
-				5111E7FD1BE6F9FE00BFAC8A /* EventViewController.m in Sources */,
 				515217CB1BE3F04000C29A59 /* main.m in Sources */,
 				74E66E041BE6DA2B00431B57 /* Database.m in Sources */,
 				747E19401BF93A17005D15EB /* FraternityInfoViewController.m in Sources */,
