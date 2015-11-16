@@ -11,7 +11,7 @@
 @property (nonatomic) NSMutableArray * fraternityList;
 @property (nonatomic) NSMutableArray * eventList;
 @property (nonatomic) NSMutableArray * addressList;
-@property (nonatomic) NSMutableArray * favoritedList;
+//@property (nonatomic) NSMutableArray * favoritedList;
 
 //Initator
 +(instancetype) sharedDatabase;

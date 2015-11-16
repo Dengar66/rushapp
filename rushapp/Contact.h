@@ -12,6 +12,8 @@
 @property (nonatomic) NSString * phoneNumber;
 @property (nonatomic) NSString * email;
 
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+
 -(instancetype) initWithName:(NSString *)name Position:(NSString *)position
                  PhoneNumber:(NSString *)phoneNumber Email:(NSString *)email;
 @end

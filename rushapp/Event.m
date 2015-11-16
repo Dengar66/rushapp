@@ -24,16 +24,17 @@
     }
     return self;
 }
-/*
+
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
-        self.fraternityName = [dictionary valueForKey:@"name"];
-        self.address = [dictionary valueForKey:@"location"];
-        self.history = [dictionary valueForKey:@"history"];
+        self.eventName = [dictionary valueForKey:@"name"];
+        self.place = [dictionary valueForKey:@"location"];
+        self.desc = [dictionary valueForKey:@"description"];
+        self.time = [dictionary valueForKey:@"date"];
     }
     return self;
 }
-*/
+
 
 //Override description
 -(NSString *)description

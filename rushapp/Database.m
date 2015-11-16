@@ -34,9 +34,9 @@
     if (self)
     {
         self.fraternityList = [self readFraternityJSON];
-        self.eventList = [NSMutableArray alloc];
-        self.addressList = [NSMutableArray alloc];
-        self.favoritedList = [NSMutableArray alloc];
+        self.eventList = [self readEventJSON];
+        self.addressList = [self getAddressesFromFraternityList];
+        //self.favoritedList = [NSMutableArray alloc];
     }
     return self;
 }
@@ -52,7 +52,18 @@
     }
     return fraternities;
 }
-//Method for reading in JSON files and returns an Array of dictionaries. 
+-(NSMutableArray *)readEventJSON
+{
+    NSArray * data = [self readJSON];
+    NSMutableArray * events = [NSMutableArray array];
+    
+    for (NSDictionary *dictionary in data) {
+        Event * event = [[Event alloc] initWithDictionary:dictionary];
+        [events addObject:event];
+    }
+    return events;
+}
+//Method for reading in JSON files and returns an Array of dictionaries.
 -(NSArray *)readJSON
 {
     NSURL * url = [NSURL fileURLWithPath:@"/Users/brettmeyer/Documents/test.json"];
@@ -67,6 +78,16 @@
     return data;
 }
 
+-(NSMutableArray *)getAddressesFromFraternityList
+{
+    //TODO: create address object with fraternity name
+    NSMutableArray * addresses = [NSMutableArray array];
+    for (Fraternity * f in self.fraternityList)
+    {
+        [addresses addObject:f.address];
+    }
+    return addresses;
+}
 
 -(void)sortEventList
 {
