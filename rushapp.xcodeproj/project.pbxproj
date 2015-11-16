@@ -540,11 +540,8 @@
 				INFOPLIST_FILE = rushapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
-					"-ObjC",
 					"-framework",
 					CFNetwork,
-					"-force_load",
-					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cs506.rushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
