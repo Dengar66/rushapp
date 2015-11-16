@@ -1,26 +1,29 @@
 //
-//  FraternityInfoViewController.m
+//  EventInformationViewController.m
 //  rushapp
 //
 //  Created by Brett Meyer on 11/15/15.
 //  Copyright © 2015 Paul Hurlbut. All rights reserved.
 //
 
-#import "FraternityInfoViewController.h"
+#import "EventInformationViewController.h"
 
-@interface FraternityInfoViewController ()
-
-@property (weak, nonatomic) IBOutlet UILabel *fraternityAddress;
-@property (weak, nonatomic) IBOutlet UILabel *fraternityName;
+@interface EventInformationViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *eventName;
+@property (weak, nonatomic) IBOutlet UILabel *address;
+@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel *desc;
 
 @end
 
-@implementation FraternityInfoViewController
+@implementation EventInformationViewController
 
 - (void)viewDidLoad {
+    self.eventName.text = @"Grill out";
+    self.address.text = @"201 W Lakelawn Pl. Madison WI";
+    self.date.text = @"Monday 5:00 PM";
+    self.desc.text = @"Come enjoy some brats and burgers!";
     [super viewDidLoad];
-    self.fraternityName.text = @"ACAICA";
-    self.fraternityAddress.text = @"201 W lakelawn pl, Madison WI.";
     // Do any additional setup after loading the view.
 }
 

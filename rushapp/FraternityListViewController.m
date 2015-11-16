@@ -12,17 +12,13 @@
 #import "Database.h"
 
 @implementation FraternityListViewController
--(instancetype) init{
-    self = [super initWithStyle:UITableViewStylePlain];
-    if (self) {
-    }
-    return self;
-}
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];
     //[self refresh];
-    self.fraternityList = @[@"ACACIA",@"Sig EP",@"Theta Chi"];
+    self.fraternityList = @[@"ACACIA"];
+    
 }
 
 -(void)didReceiveMemoryWarning

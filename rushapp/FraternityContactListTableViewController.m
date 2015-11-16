@@ -1,22 +1,22 @@
 //
-//  EventFeedTableTableViewController.m
+//  FraternityContactListTableViewController.m
 //  rushapp
 //
 //  Created by Brett Meyer on 11/15/15.
 //  Copyright © 2015 Paul Hurlbut. All rights reserved.
 //
 
-#import "EventFeedTableTableViewController.h"
+#import "FraternityContactListTableViewController.h"
 
-@interface EventFeedTableTableViewController ()
+@interface FraternityContactListTableViewController ()
 
 @end
 
-@implementation EventFeedTableTableViewController
+@implementation FraternityContactListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.eventList = [[NSMutableArray alloc] initWithObjects:@"Acacia - Grill Out: 5:00 PM", nil];
+    self.fraternityContactList = @[@"Brett Meyer"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -38,8 +38,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-    return [self.eventList count];
+    //#warning Incomplete implementation, return the number of rows
+    return [self.fraternityContactList count];;
 }
 
 
@@ -53,11 +53,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = self.eventList[indexPath.row];
+    cell.textLabel.text = self.fraternityContactList[indexPath.row];
     return cell;
 }
-
-
 
 /*
 // Override to support conditional editing of the table view.

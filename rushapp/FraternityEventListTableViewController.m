@@ -1,23 +1,23 @@
 //
-//  EventFeedTableTableViewController.m
+//  FraternityEventListTableViewController.m
 //  rushapp
 //
 //  Created by Brett Meyer on 11/15/15.
 //  Copyright © 2015 Paul Hurlbut. All rights reserved.
 //
 
-#import "EventFeedTableTableViewController.h"
+#import "FraternityEventListTableViewController.h"
 
-@interface EventFeedTableTableViewController ()
+@interface FraternityEventListTableViewController ()
 
 @end
 
-@implementation EventFeedTableTableViewController
+@implementation FraternityEventListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.eventList = [[NSMutableArray alloc] initWithObjects:@"Acacia - Grill Out: 5:00 PM", nil];
-    
+    self.fraternityEventList = @[@"Acacia - Grill Out: 5:00 PM"];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,13 +33,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Incomplete implementation, return the number of sections
+    //#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-    return [self.eventList count];
+    //#warning Incomplete implementation, return the number of rows
+    return [self.fraternityEventList count];;
 }
 
 
@@ -53,10 +53,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = self.eventList[indexPath.row];
+    cell.textLabel.text = self.fraternityEventList[indexPath.row];
     return cell;
 }
-
 
 
 /*
