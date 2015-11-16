@@ -87,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C4B0ED1BF9BE2600BC2D92 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C4B0FB1BF9C95700BC2D92 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +122,6 @@
 				515217E51BE3F04000C29A59 /* rushappTests */,
 				515217F01BE3F04000C29A59 /* rushappUITests */,
 				515217C71BE3F04000C29A59 /* Products */,
-				51C4B1041BF9C95800BC2D92 /* rushapp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,7 +131,6 @@
 				515217C61BE3F04000C29A59 /* rushapp.app */,
 				515217E21BE3F04000C29A59 /* rushappTests.xctest */,
 				515217ED1BE3F04000C29A59 /* rushappUITests.xctest */,
-				51C4B1031BF9C95700BC2D92 /* rushapp-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +265,6 @@
 			);
 			name = "rushapp-cal";
 			productName = rushapp;
-			productReference = 51C4B1031BF9C95700BC2D92 /* rushapp-cal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -351,9 +346,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C4B0FD1BF9C95700BC2D92 /* LaunchScreen.storyboard in Resources */,
-				51C4B0FE1BF9C95700BC2D92 /* Assets.xcassets in Resources */,
-				51C4B0FF1BF9C95700BC2D92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,16 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C4B0F01BF9C95700BC2D92 /* AppDelegate.m in Sources */,
-				51C4B0F11BF9C95700BC2D92 /* Event.m in Sources */,
-				51C4B0F21BF9C95700BC2D92 /* Fraternity.m in Sources */,
-				51C4B0F31BF9C95700BC2D92 /* Contact.m in Sources */,
-				51C4B0F41BF9C95700BC2D92 /* FraternityListViewController.m in Sources */,
-				51C4B0F51BF9C95700BC2D92 /* EventViewController.m in Sources */,
-				51C4B0F61BF9C95700BC2D92 /* main.m in Sources */,
-				51C4B0F71BF9C95700BC2D92 /* Database.m in Sources */,
-				51C4B0F81BF9C95700BC2D92 /* FraternityInfoViewController.m in Sources */,
-				51C4B0F91BF9C95700BC2D92 /* EventFeedTableTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

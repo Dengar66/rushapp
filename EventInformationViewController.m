@@ -13,12 +13,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *address;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
+@property (weak, nonatomic) IBOutlet UILabel *fraternityName;
 
 @end
 
 @implementation EventInformationViewController
 
 - (void)viewDidLoad {
+    self.fraternityName.text = @"Acacia";
     self.eventName.text = @"Grill out";
     self.address.text = @"201 W Lakelawn Pl. Madison WI";
     self.date.text = @"Monday 5:00 PM";

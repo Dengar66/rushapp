@@ -14,6 +14,8 @@
 @property (nonatomic) NSString * desc;
 @property (nonatomic) NSDate * time;
 
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+
 -(instancetype) initWithEventName:(NSString *)eventName Place:(NSString *)place
                       Description:(NSString *)desc Time:(NSDate *)time;
 
