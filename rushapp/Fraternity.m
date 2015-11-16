@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraternity.h"
+#import "Contact.h"
 
 @implementation Fraternity
 
@@ -31,6 +32,30 @@
         self.history = [dictionary valueForKey:@"history"];
     }
     return self;
+}
+-(void)setContactList
+{
+    NSArray * data = [self readJSON];
+    NSMutableArray * contacts = [NSMutableArray array];
+    
+    for (NSDictionary *dictionary in data) {
+        Contact * contact = [[Contact alloc] initWithDictionary:dictionary];
+        [self.contactList addObject:contact];
+    }
+}
+
+-(NSArray *)readJSON
+{
+    NSURL * url = [NSURL fileURLWithPath:@"/Users/brettmeyer/Documents/test.json"];
+    NSError *error = nil;
+    
+    NSString *jsonString =
+    [NSString stringWithContentsOfURL:url
+                             encoding:NSUTF8StringEncoding
+                                error:&error];
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSArray * data = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    return data;
 }
 
 //Override description
