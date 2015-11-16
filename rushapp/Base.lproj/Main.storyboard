@@ -37,7 +37,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="xu3-Ho-tC0" kind="push" id="EGV-fW-JC7"/>
+                                            <segue destination="xu3-Ho-tC0" kind="show" id="EGV-fW-JC7"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="23" textLabel="5S3-0v-Beo" style="IBUITableViewCellStyleDefault" id="NAT-HR-5jQ">
@@ -60,7 +60,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="OYu-xO-4Gp" kind="push" id="9yk-dM-M6N"/>
+                                            <segue destination="OYu-xO-4Gp" kind="show" id="9yk-dM-M6N"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="11" textLabel="kiy-9N-1X4" style="IBUITableViewCellStyleDefault" id="xvk-ZV-fn5">
@@ -119,31 +119,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xd-8r-zEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="-706"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GXR-k7-1Vo">
-            <objects>
-                <viewController id="Pi0-hP-eSu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FI7-bv-f35"/>
-                        <viewControllerLayoutGuide type="bottom" id="aTO-Tr-Dq7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RhC-gg-pfR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mGS-vK-Mwk">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <animations/>
-                            </mapView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dqO-Q4-TB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="356" y="212"/>
         </scene>
         <!--Rush Info Controller-->
         <scene sceneID="U74-9Z-pbf">
@@ -431,7 +406,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A42-T0-daU">
-                                <rect key="frame" x="20" y="259" width="67" height="30"/>
+                                <rect key="frame" x="15" y="516" width="67" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Event List"/>
                                 <connections>
@@ -439,17 +414,25 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-EI-SQ4">
-                                <rect key="frame" x="20" y="214" width="83" height="30"/>
+                                <rect key="frame" x="15" y="471" width="83" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Contact List"/>
                                 <connections>
                                     <segue destination="NHq-3g-1Se" kind="show" id="xwv-O5-wvT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-zf-IHj">
+                                <rect key="frame" x="20" y="214" width="374" height="142"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1Ss-Y8-Sar" firstAttribute="width" secondItem="uRr-G7-weH" secondAttribute="width" id="6zD-CU-LVr"/>
                             <constraint firstItem="1Ss-Y8-Sar" firstAttribute="centerX" secondItem="uRr-G7-weH" secondAttribute="centerX" id="Zpp-tS-6Ja"/>
                         </constraints>
                     </view>
@@ -457,6 +440,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <connections>
                         <outlet property="fraternityAddress" destination="Fba-GH-TaY" id="EGn-b6-4Rn"/>
                         <outlet property="fraternityName" destination="1Ss-Y8-Sar" id="Zsq-7y-B8h"/>
+                        <outlet property="history" destination="NeQ-zf-IHj" id="FOU-Yp-cn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2n-ch-hAD" userLabel="First Responder" sceneMemberID="firstResponder"/>

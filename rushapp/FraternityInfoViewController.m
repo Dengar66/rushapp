@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *fraternityAddress;
 @property (weak, nonatomic) IBOutlet UILabel *fraternityName;
+@property (weak, nonatomic) IBOutlet UILabel *history;
 
 @end
 
@@ -21,6 +22,7 @@
     [super viewDidLoad];
     self.fraternityName.text = @"ACAICA";
     self.fraternityAddress.text = @"201 W lakelawn pl, Madison WI.";
+    self.history.text = @"Some interesting history here";
     // Do any additional setup after loading the view.
 }
 
