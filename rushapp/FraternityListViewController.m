@@ -8,13 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "FraternityListViewController.h"
+#import "Fraternity.h"
 #import "Database.h"
 
 @implementation FraternityListViewController
-
+-(instancetype) init{
+    self = [super initWithStyle:UITableViewStylePlain];
+    if (self) {
+    }
+    return self;
+}
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    //[self refresh];
     self.fraternityList = @[@"ACACIA",@"Sig EP",@"Theta Chi"];
 }
 
@@ -42,5 +49,10 @@
     cell.textLabel.text = self.fraternityList[indexPath.row];
     return cell;
 }
+- (IBAction)refresh {
+    self.fraternityList = [[Database sharedDatabase] fraternityList];
+    [self.tableView reloadData];
+}
+
 
 @end

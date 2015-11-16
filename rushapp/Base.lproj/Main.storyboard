@@ -382,10 +382,10 @@ Above all, we want you to have a good time during recruitment, so take advantage
             </objects>
             <point key="canvasLocation" x="983" y="-706"/>
         </scene>
-        <!--Fraternity Info-->
+        <!--Fraternity Information View-->
         <scene sceneID="jDg-Ed-H9t">
             <objects>
-                <viewController id="TcC-ab-a1H" customClass="FraternityInfoViewController" sceneMemberID="viewController">
+                <viewController title="Fraternity Information View" id="TcC-ab-a1H" customClass="FraternityInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ADV-Br-77z"/>
                         <viewControllerLayoutGuide type="bottom" id="q2Y-k5-mcG"/>
@@ -393,14 +393,85 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <view key="view" contentMode="scaleToFill" id="uRr-G7-weH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fraternity Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ss-Y8-Sar">
+                                <rect key="frame" x="140" y="72" width="123" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fba-GH-TaY">
+                                <rect key="frame" x="20" y="121" width="63" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-EI-SQ4">
+                                <rect key="frame" x="20" y="214" width="83" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Contact List"/>
+                                <connections>
+                                    <segue destination="eJE-u6-0ED" kind="show" id="dAN-9c-0BZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A42-T0-daU">
+                                <rect key="frame" x="20" y="259" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Event List"/>
+                                <connections>
+                                    <segue destination="391-NP-Q60" kind="show" id="zIj-ia-Iif"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fraternity Info" id="52Z-ip-d9b"/>
+                    <navigationItem key="navigationItem" id="52Z-ip-d9b"/>
+                    <connections>
+                        <outlet property="fraternityAddress" destination="Fba-GH-TaY" id="EGn-b6-4Rn"/>
+                        <outlet property="fraternityName" destination="1Ss-Y8-Sar" id="Zsq-7y-B8h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2n-ch-hAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1437" y="-706"/>
+        </scene>
+        <!--Contact List View-->
+        <scene sceneID="y9H-9z-eYw">
+            <objects>
+                <viewController title="Contact List View" id="eJE-u6-0ED" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2oU-bz-sWg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ehd-hg-nOw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uzd-OH-mMi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHL-u5-rcI">
+                                <rect key="frame" x="20" y="86" width="93" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jck-2A-Hg5">
+                                <rect key="frame" x="45" y="115" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DkX-ck-3Rk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053" y="-985"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W7w-6h-hHX">
@@ -428,6 +499,61 @@ Above all, we want you to have a good time during recruitment, so take advantage
             </objects>
             <point key="canvasLocation" x="1437" y="154"/>
         </scene>
+        <!--Fraternity Event List View-->
+        <scene sceneID="zt4-vd-7if">
+            <objects>
+                <tableViewController title="Fraternity Event List View" id="391-NP-Q60" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="co1-0W-kau">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="G3X-tn-kFT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QDp-kE-Njt">
+                                        <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QDp-kE-Njt" id="YgN-c9-JN9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bEQ-Sw-2qM">
+                                        <rect key="frame" x="0.0" y="108" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bEQ-Sw-2qM" id="pPO-CW-ack">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xZZ-UD-Dld">
+                                        <rect key="frame" x="0.0" y="152" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xZZ-UD-Dld" id="Uoh-qd-OoC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="391-NP-Q60" id="BmS-A9-lIH"/>
+                            <outlet property="delegate" destination="391-NP-Q60" id="Lvo-8F-Sv2"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWI-gE-Ec7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053" y="-173"/>
+        </scene>
         <!--Event Feed Controller-->
         <scene sceneID="6dg-M5-ccQ">
             <objects>
@@ -438,7 +564,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="a8h-Q0-Waf" style="IBUITableViewCellStyleDefault" id="nws-Rd-3yp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="a8h-Q0-Waf" style="IBUITableViewCellStyleDefault" id="nws-Rd-3yp">
                                 <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nws-Rd-3yp" id="WSi-sc-4Jc">
@@ -457,6 +583,9 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="HYN-wY-fx7" kind="show" id="Fqv-YQ-wGf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -470,6 +599,25 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoZ-7Y-RBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983" y="-1502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lXl-H2-IXM">
+            <objects>
+                <viewController id="HYN-wY-fx7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ld3-Xb-QeX"/>
+                        <viewControllerLayoutGuide type="bottom" id="439-r5-SA2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfY-Hf-73E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlE-2z-10t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-1502"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R85-d5-bku">

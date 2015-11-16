@@ -10,7 +10,7 @@
 
 @implementation Fraternity
 
--(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSMutableArray *)contactList EventList:(NSMutableArray *)eventList
+-(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSArray *)contactList EventList:(NSArray *)eventList
 {
     self = [super init];
     

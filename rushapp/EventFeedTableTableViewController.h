@@ -10,4 +10,5 @@
 
 @interface EventFeedTableTableViewController : UITableViewController
 
+@property (nonatomic) NSMutableArray * eventList;
 @end

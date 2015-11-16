@@ -10,6 +10,9 @@
 
 @interface FraternityInfoViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *fraternityAddress;
+@property (weak, nonatomic) IBOutlet UILabel *fraternityName;
+
 @end
 
 @implementation FraternityInfoViewController

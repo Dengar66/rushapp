@@ -11,11 +11,25 @@
 
 @implementation Database
 
++(instancetype) sharedDatabase
+{
+    static Database * sharedDatabase;
+    
+    if(!sharedDatabase)
+    {
+        sharedDatabase = [[self alloc] initPrivate];
+    }
+    return sharedDatabase;
+}
 -(instancetype) init
 {
+    [NSException raise:@"Singleton" format:@"USE +[Database sharedDatabase]"];
+    return nil;
+}
+-(instancetype) initPrivate
+{
     self = [super init];
-    
-    if(self)
+    if (self)
     {
         self.fraternityList = [NSMutableArray alloc];
         self.eventList = [NSMutableArray alloc];
@@ -35,6 +49,10 @@
 {
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:TRUE];
     [self.fraternityList sortUsingDescriptors:@[sortDescriptor]];
+}
+-(void)addFraternityListObject:(Fraternity *)object
+{
+    [self.fraternityList addObject:object];
 }
 
 @end
