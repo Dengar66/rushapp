@@ -87,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C4B0ED1BF9BE2600BC2D92 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51C4B0FA1BF9C95700BC2D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C4B0FB1BF9C95700BC2D92 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,6 +124,7 @@
 				515217E51BE3F04000C29A59 /* rushappTests */,
 				515217F01BE3F04000C29A59 /* rushappUITests */,
 				515217C71BE3F04000C29A59 /* Products */,
+				51C4B1041BF9C95800BC2D92 /* rushapp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +134,7 @@
 				515217C61BE3F04000C29A59 /* rushapp.app */,
 				515217E21BE3F04000C29A59 /* rushappTests.xctest */,
 				515217ED1BE3F04000C29A59 /* rushappUITests.xctest */,
+				51C4B1031BF9C95700BC2D92 /* rushapp-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +255,23 @@
 			productReference = 515217ED1BE3F04000C29A59 /* rushappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		51C4B0EE1BF9C95700BC2D92 /* rushapp-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51C4B1001BF9C95700BC2D92 /* Build configuration list for PBXNativeTarget "rushapp-cal" */;
+			buildPhases = (
+				51C4B0EF1BF9C95700BC2D92 /* Sources */,
+				51C4B0FA1BF9C95700BC2D92 /* Frameworks */,
+				51C4B0FC1BF9C95700BC2D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rushapp-cal";
+			productName = rushapp;
+			productReference = 51C4B1031BF9C95700BC2D92 /* rushapp-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,6 +283,12 @@
 				TargetAttributes = {
 					515217C51BE3F04000C29A59 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = XW9BKY5FU3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					515217E11BE3F04000C29A59 = {
 						CreatedOnToolsVersion = 7.1;
@@ -282,6 +316,7 @@
 				515217C51BE3F04000C29A59 /* rushapp */,
 				515217E11BE3F04000C29A59 /* rushappTests */,
 				515217EC1BE3F04000C29A59 /* rushappUITests */,
+				51C4B0EE1BF9C95700BC2D92 /* rushapp-cal */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +344,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C4B0FC1BF9C95700BC2D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C4B0FD1BF9C95700BC2D92 /* LaunchScreen.storyboard in Resources */,
+				51C4B0FE1BF9C95700BC2D92 /* Assets.xcassets in Resources */,
+				51C4B0FF1BF9C95700BC2D92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +392,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				515217F21BE3F04000C29A59 /* rushappUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C4B0EF1BF9C95700BC2D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C4B0F01BF9C95700BC2D92 /* AppDelegate.m in Sources */,
+				51C4B0F11BF9C95700BC2D92 /* Event.m in Sources */,
+				51C4B0F21BF9C95700BC2D92 /* Fraternity.m in Sources */,
+				51C4B0F31BF9C95700BC2D92 /* Contact.m in Sources */,
+				51C4B0F41BF9C95700BC2D92 /* FraternityListViewController.m in Sources */,
+				51C4B0F51BF9C95700BC2D92 /* EventViewController.m in Sources */,
+				51C4B0F61BF9C95700BC2D92 /* main.m in Sources */,
+				51C4B0F71BF9C95700BC2D92 /* Database.m in Sources */,
+				51C4B0F81BF9C95700BC2D92 /* FraternityInfoViewController.m in Sources */,
+				51C4B0F91BF9C95700BC2D92 /* EventFeedTableTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,10 +531,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = rushapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CFNetwork,
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cs506.rushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -480,10 +553,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = rushapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs506.rushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -535,6 +611,42 @@
 			};
 			name = Release;
 		};
+		51C4B1011BF9C95700BC2D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "rushapp copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CFNetwork,
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cs506.rushapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		51C4B1021BF9C95700BC2D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "rushapp copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs506.rushapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +682,15 @@
 			buildConfigurations = (
 				515217FD1BE3F04000C29A59 /* Debug */,
 				515217FE1BE3F04000C29A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51C4B1001BF9C95700BC2D92 /* Build configuration list for PBXNativeTarget "rushapp-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C4B1011BF9C95700BC2D92 /* Debug */,
+				51C4B1021BF9C95700BC2D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
