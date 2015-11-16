@@ -23,6 +23,7 @@
     }
     return self;
 }
+
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
         self.fraternityName = [dictionary valueForKey:@"name"];
