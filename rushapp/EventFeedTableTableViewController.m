@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.eventList = [[NSMutableArray alloc] initWithObjects:@"Acacia - Grill Out: 5:00 PM", @"Sigma Phi Epsilon - Football: 6:00 PM", nil];
+    self.eventList = [[NSMutableArray alloc] initWithObjects:@"Acacia - Grill Out: 5:00 PM", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

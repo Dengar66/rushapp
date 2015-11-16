@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FraternityContactListTableViewController : UITableViewController
-
+@property (nonatomic) NSArray * fraternityContactList;
 @end

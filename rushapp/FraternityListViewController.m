@@ -18,6 +18,7 @@
     [super viewDidLoad];
     //[self refresh];
     self.fraternityList = @[@"ACACIA"];
+    
 }
 
 -(void)didReceiveMemoryWarning

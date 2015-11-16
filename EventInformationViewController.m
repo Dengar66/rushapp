@@ -9,12 +9,20 @@
 #import "EventInformationViewController.h"
 
 @interface EventInformationViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *eventName;
+@property (weak, nonatomic) IBOutlet UILabel *address;
+@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel *desc;
 
 @end
 
 @implementation EventInformationViewController
 
 - (void)viewDidLoad {
+    self.eventName.text = @"Grill out";
+    self.address.text = @"201 W Lakelawn Pl. Madison WI";
+    self.date.text = @"Monday 5:00 PM";
+    self.desc.text = @"Come enjoy some brats and burgers!";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

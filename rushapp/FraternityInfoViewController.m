@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.fraternityName.text = @"ACAICA";
+    self.fraternityAddress.text = @"201 W lakelawn pl, Madison WI.";
     // Do any additional setup after loading the view.
 }
 
