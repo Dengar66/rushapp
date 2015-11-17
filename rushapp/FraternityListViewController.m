@@ -16,8 +16,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self refresh];
-    self.fraternityList = @[@"Acacia"];
+    [self refresh];
     
 }
 
@@ -42,14 +41,12 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    //cell.textLabel.text = [self.fraternityList[indexPath.row] fraternityName];
-    cell.textLabel.text = self.fraternityList[indexPath.row];
+    cell.textLabel.text = [self.fraternityList[indexPath.row] fraternityName];
     return cell;
 }
 - (IBAction)refresh {
     self.fraternityList = [[Database sharedDatabase] fraternityList];
     [self.tableView reloadData];
 }
-
 
 @end

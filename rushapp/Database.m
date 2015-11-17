@@ -33,13 +33,14 @@
     self = [super init];
     if (self)
     {
-        //self.fraternityList = [self readFraternityJSON];
+        self.fraternityList = [self readFraternityJSON];
         //self.eventList = [self readEventJSON];
        // self.addressList = [self getAddressesFromFraternityList];
         //self.favoritedList = [NSMutableArray alloc];
     }
     return self;
 }
+
 //Parse through JSON files for needed data.
 -(NSMutableArray *)readFraternityJSON
 {
