@@ -19,7 +19,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     Database *sharedDatabase = [Database sharedDatabase];
-    
     return YES;
     
 }
