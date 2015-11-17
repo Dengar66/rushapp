@@ -11,5 +11,5 @@
 @interface FraternityListViewController : UITableViewController <UITableViewDelegate>
 
 
-@property (nonatomic) NSArray * fraternityList;
+@property (nonatomic) NSMutableArray * fraternityList;
 @end

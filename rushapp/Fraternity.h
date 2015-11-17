@@ -26,5 +26,5 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
--(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSArray *)contactList EventList:(NSArray *)eventList;
+//-(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSArray *)contactList EventList:(NSArray *)eventList;
 @end

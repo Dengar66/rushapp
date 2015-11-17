@@ -10,7 +10,7 @@
 #import "Contact.h"
 
 @implementation Fraternity
-
+/*
 -(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSArray *)contactList EventList:(NSArray *)eventList
 {
     self = [super init];
@@ -23,21 +23,20 @@
         self.contactList = contactList;
     }
     return self;
-}
+}*/
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
         self.fraternityName = [dictionary valueForKey:@"name"];
         self.address = [dictionary valueForKey:@"location"];
         self.history = [dictionary valueForKey:@"history"];
+        //[self setContactList];
     }
     return self;
 }
 -(void)setContactList
 {
     NSArray * data = [self readJSON];
-    NSMutableArray * contacts = [NSMutableArray array];
-    
     for (NSDictionary *dictionary in data) {
         Contact * contact = [[Contact alloc] initWithDictionary:dictionary];
         [self.contactList addObject:contact];

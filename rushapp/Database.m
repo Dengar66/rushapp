@@ -34,8 +34,8 @@
     if (self)
     {
         self.fraternityList = [self readFraternityJSON];
-        self.eventList = [self readEventJSON];
-        self.addressList = [self getAddressesFromFraternityList];
+        //self.eventList = [self readEventJSON];
+       // self.addressList = [self getAddressesFromFraternityList];
         //self.favoritedList = [NSMutableArray alloc];
     }
     return self;
