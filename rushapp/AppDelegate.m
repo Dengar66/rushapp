@@ -20,7 +20,6 @@
     // Override point for customization after application launch.
     Database *sharedDatabase = [Database sharedDatabase];
     return YES;
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
