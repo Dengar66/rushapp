@@ -1,6 +1,9 @@
 # rushapp
 UW Greek Rush App for CS506 Fall 2015
 
+Frontend: Running the JS file for UI Automation:
+This JavaScript should be imported into the Automation tool found within the Instruments tool in Developer Tools.
+After that, click the play button while Xcode is running with the target emulator and project.
 
 Backend Server Link: https://greek-rush-ainstefjord.c9.io/ 
 
