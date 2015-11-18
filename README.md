@@ -2,15 +2,17 @@
 UW Greek Rush App for CS506 Fall 2015
 
 
-Backend Server Link: https://greek-rush-ainstefjord.c9.io/ 
+Backend Heroku Server Link: https://hidden-stream-3045.herokuapp.com
 
 Backend Code Link: https://ide.c9.io/ainstefjord/greek_rush
-
+The above link to cloud9 is where our development is taking place; An account will nbe needed to 
+view the cloud9 code, but it is publicly viewable via the link. An account can be created by using Github
+credentials.
 
 Backend Notes: 
 
-What I’ve done so far:
-
+What's done so far:
+*** iteration 1 *** (skip to iteration 2)
 1. added a few recommended gems: Bootstrap Generator  devise  email_validator
 2. changed the landing page to the admin page
 3. added models of Fraternity and Event detailed below
@@ -19,16 +21,38 @@ What I’ve done so far:
     b.Use “rails console” commands to create/edit/destroy
 5. responds to JSON, just concat .json to any calls to models 
 6. require that all required fields are input
-    a. we can discuss what is required 
+    a. we can discuss what is required
+*** iteration 2 ***
+7. we added code coverage testing; in cloud 9 console type :rake  test and view index.htnl in coverage folder
+8. SimpleCov is being implemented as a more flexible way to test code coverage, we anticipate SimpleCov to be used in conjunction with rspec
+9. User models have been created for testing on frontend aided with divise gem  Users are now required to log in to do  anything more than read the models
+10. 
+
+Heroku is for stable builds and c9 is for dev builds. The iteration 2 build has a known bug when deployd to heroku; it's missing HTTP request as they come in (errors say the app is empty). Cloud9 version is fully functional;. The details we have about the heroku bug are as follows: heroku is set tup  to  pull directly from the github repo which
+was pushed from cloud9 (where the working version resides):;
 
 
+Instructions for Using and Testing Frontend iOS Application:
+Requirements
+Apple Computer
+Xcode
+Developer Tools (specifically Instruments)
+Processing Power to run iPhone 6 emulator
+Instructions
+Pull project from the Github Repository, Iteration 2 branch
+Open Xcode, and open the project
+Select rushapp as the project and iPhone 6 as the device
+Build the project for running
+Begin to run the emulator
+Feel free to play around with the app in the emulator
+Click the Xcode menu bar, then select Developer Tools, and open Instruments
+Choose profiling template as Automation
+Click the display settings button in the window to the right of the script
+Add script, click import, and select the It2ScriptV1.js JavaScript file
+Stop the running of the application from Xcode
+Click the play button at the bottom of the script and watch how the app behaves
+Shows a testing of all the user view options
 
-**Note** Rails convention has groups of model objects plural and object definitions singular. This means the URL for fraternity is https://greek-rush-ainstefjord.c9.io/fraternities
-Yes, it knows the “change the y to i add es” rule. Yes, this does mean the machines are coming for us.
-
-**Note** During testing realized that ID numbers are not reused. At 2 now, looking into cleaning strategies to start from 1. Found gem here that will let us clean the db and basically reset it when we are putting in real information. I did not install this gem and it is not in the gemfile either, wanted to wait and talk it out with you guys. 
-
-**Note** When making an event, you need to specify the ID number of the fraternity, not the name. Right now there is 1 fraternity named Test2 with id 2. I’ll try to fix this. 
 
 
 Goals 
