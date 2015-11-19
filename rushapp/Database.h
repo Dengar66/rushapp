@@ -8,9 +8,10 @@
 @interface Database : NSObject
 
 //Fields
-@property (nonatomic) NSMutableArray * fraternityList;
-@property (nonatomic) NSMutableArray * eventList;
-@property (nonatomic) NSMutableArray * addressList;
+@property (nonatomic) NSArray * fraternityList;
+@property (nonatomic) NSArray * eventList;
+@property (nonatomic) NSArray * temp;
+@property (nonatomic) NSData * jsonData;
 //@property (nonatomic) NSMutableArray * favoritedList;
 
 //Initator
@@ -18,6 +19,5 @@
 
 //Sort Arrays
 -(void)sortEventList;
--(void)sortFraternityList;
--(void)addFraternityListObject:(Fraternity *)object;
+
 @end

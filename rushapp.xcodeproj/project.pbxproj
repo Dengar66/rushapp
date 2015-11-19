@@ -14,7 +14,6 @@
 		515217DC1BE3F04000C29A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515217DA1BE3F04000C29A59 /* LaunchScreen.storyboard */; };
 		515217E71BE3F04000C29A59 /* rushappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217E61BE3F04000C29A59 /* rushappTests.m */; };
 		515217F21BE3F04000C29A59 /* rushappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217F11BE3F04000C29A59 /* rushappUITests.m */; };
-		51BB2B021BFAF48D000A2DFA /* It2ScriptV1.js in Resources */ = {isa = PBXBuildFile; fileRef = 51BB2B011BFAF48D000A2DFA /* It2ScriptV1.js */; };
 		747E19401BF93A17005D15EB /* FraternityInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */; };
 		747E19431BF93AC3005D15EB /* EventFeedTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */; };
 		747E19461BF95FC8005D15EB /* EventInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19451BF95FC8005D15EB /* EventInformationViewController.m */; };
@@ -60,7 +59,6 @@
 		515217ED1BE3F04000C29A59 /* rushappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rushappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515217F11BE3F04000C29A59 /* rushappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rushappUITests.m; sourceTree = "<group>"; };
 		515217F31BE3F04000C29A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51BB2B011BFAF48D000A2DFA /* It2ScriptV1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = It2ScriptV1.js; path = ../It2ScriptV1.js; sourceTree = "<group>"; };
 		747E193E1BF93A17005D15EB /* FraternityInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FraternityInfoViewController.h; sourceTree = "<group>"; };
 		747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityInfoViewController.m; sourceTree = "<group>"; };
 		747E19411BF93AC3005D15EB /* EventFeedTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventFeedTableTableViewController.h; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		515217BD1BE3F04000C29A59 = {
 			isa = PBXGroup;
 			children = (
-				51BB2B011BFAF48D000A2DFA /* It2ScriptV1.js */,
 				74B58EA11BFA8B8500EB7404 /* MapKit.framework */,
 				515217C81BE3F04000C29A59 /* rushapp */,
 				515217E51BE3F04000C29A59 /* rushappTests */,
@@ -325,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51BB2B021BFAF48D000A2DFA /* It2ScriptV1.js in Resources */,
 				515217DC1BE3F04000C29A59 /* LaunchScreen.storyboard in Resources */,
 				515217D91BE3F04000C29A59 /* Assets.xcassets in Resources */,
 				515217D71BE3F04000C29A59 /* Main.storyboard in Resources */,

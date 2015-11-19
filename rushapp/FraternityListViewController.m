@@ -17,7 +17,6 @@
 {
     [super viewDidLoad];
     [self refresh];
-    
 }
 
 -(void)didReceiveMemoryWarning
