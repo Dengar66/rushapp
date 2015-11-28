@@ -17,9 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _mapView = [[MKMapView alloc]
-               initWithFrame:self.view.bounds
-               ];
+    //_mapView = [[MKMapView alloc]
+               //initWithFrame:self.view.bounds
+               //];
     _mapView.showsUserLocation = YES;
     _mapView.mapType = MKMapTypeStandard;
     _mapView.delegate = self;
