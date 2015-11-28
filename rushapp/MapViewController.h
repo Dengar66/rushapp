@@ -11,11 +11,13 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-IBOutlet MKMapView *mapView;
+//IBOutlet MKMapView *mapView;
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
-    MKMapView *mapView;
+    //MKMapView *mapView;
 }
-@property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)zoomIn:(id)sender;
+- (IBAction)changeMapType:(id)sender;
 
 @end

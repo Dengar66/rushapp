@@ -17,13 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    mapView = [[MKMapView alloc]
+    _mapView = [[MKMapView alloc]
                initWithFrame:self.view.bounds
                ];
-    mapView.showsUserLocation = YES;
-    mapView.mapType = MKMapTypeStandard;
-    mapView.delegate = self;
-    [self.view addSubview:mapView];
+    _mapView.showsUserLocation = YES;
+    _mapView.mapType = MKMapTypeStandard;
+    _mapView.delegate = self;
+    [self.view addSubview:_mapView];
 }
 
 //- [CLLocationManager requesteWhenInUseAuthorization] {}
@@ -38,7 +38,7 @@
     location.longitude = userLocation.coordinate.longitude;
     region.span = span;
     region.center = location;
-    [mapView setRegion:region animated:YES];
+    [_mapView setRegion:region animated:YES];
 }
 
 
