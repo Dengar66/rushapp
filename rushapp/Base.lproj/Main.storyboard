@@ -126,7 +126,7 @@
         <!--Map View Controller-->
         <scene sceneID="GXR-k7-1Vo">
             <objects>
-                <viewController title="Map View Controller" id="Pi0-hP-eSu" sceneMemberID="viewController">
+                <viewController title="Map View Controller" id="Pi0-hP-eSu" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FI7-bv-f35"/>
                         <viewControllerLayoutGuide type="bottom" id="aTO-Tr-Dq7"/>

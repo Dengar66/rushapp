@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5119C31F1C0A359C008EAFEE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5119C31E1C0A359C008EAFEE /* MapViewController.m */; };
 		515217CB1BE3F04000C29A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217CA1BE3F04000C29A59 /* main.m */; };
 		515217CE1BE3F04000C29A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217CD1BE3F04000C29A59 /* AppDelegate.m */; };
 		515217D71BE3F04000C29A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515217D51BE3F04000C29A59 /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5119C31D1C0A3548008EAFEE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5119C31E1C0A359C008EAFEE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		515217C61BE3F04000C29A59 /* rushapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rushapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515217CA1BE3F04000C29A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		515217CC1BE3F04000C29A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -165,6 +168,8 @@
 				74E66E021BE6DA0E00431B57 /* Database.h */,
 				74E66E031BE6DA2B00431B57 /* Database.m */,
 				515217D51BE3F04000C29A59 /* Main.storyboard */,
+				5119C31D1C0A3548008EAFEE /* MapViewController.h */,
+				5119C31E1C0A359C008EAFEE /* MapViewController.m */,
 				515217D81BE3F04000C29A59 /* Assets.xcassets */,
 				515217DA1BE3F04000C29A59 /* LaunchScreen.storyboard */,
 				515217DD1BE3F04000C29A59 /* Info.plist */,
@@ -367,6 +372,7 @@
 				747E194C1BF96013005D15EB /* FraternityEventListTableViewController.m in Sources */,
 				74E66E011BE6D86E00431B57 /* Contact.m in Sources */,
 				747E19491BF95FF3005D15EB /* FraternityContactListTableViewController.m in Sources */,
+				5119C31F1C0A359C008EAFEE /* MapViewController.m in Sources */,
 				74B01ABB1BE6E6F30030EA9B /* FraternityListViewController.m in Sources */,
 				515217CB1BE3F04000C29A59 /* main.m in Sources */,
 				74E66E041BE6DA2B00431B57 /* Database.m in Sources */,
