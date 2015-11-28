@@ -136,30 +136,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGS-vK-Mwk">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
                             </mapView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZv-fm-LOQ">
-                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                                <animations/>
-                                <items>
-                                    <barButtonItem title="Zoom" id="W9t-s5-tcI">
-                                        <connections>
-                                            <action selector="zoomIn:" destination="Pi0-hP-eSu" id="Hnt-Tn-ivQ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Type" id="hsa-bx-tBM">
-                                        <connections>
-                                            <action selector="changeMapType:" destination="Pi0-hP-eSu" id="fGX-2T-mPc"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="My Location" id="oah-cZ-QfK">
+                            <connections>
+                                <action selector="zoomIn:" destination="Pi0-hP-eSu" id="Txn-BY-Fej"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Center" width="72" id="hdp-9N-K19">
+                            <connections>
+                                <action selector="center:" destination="Pi0-hP-eSu" id="MKS-vf-4AJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Change Map Type" id="oPF-My-8Fs">
+                            <connections>
+                                <action selector="changeMapType:" destination="Pi0-hP-eSu" id="XT3-1V-GKk"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="b5f-u7-EF8"/>
+                    <connections>
+                        <outlet property="mapView" destination="mGS-vK-Mwk" id="Lgw-gW-2lF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqO-Q4-TB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,7 +182,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zb8-Yy-FTW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -725,13 +729,18 @@ Above all, we want you to have a good time during recruitment, so take advantage
         <!--Navigation Controller-->
         <scene sceneID="R85-d5-bku">
             <objects>
-                <navigationController id="Ank-Mp-rYi" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="Ank-Mp-rYi" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4r-Cb-UjW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="W4G-Hx-1I2">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
                         <segue destination="PAY-vL-asg" kind="relationship" relationship="rootViewController" id="T9I-NG-uTT"/>
                     </connections>

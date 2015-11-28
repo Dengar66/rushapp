@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5119C31F1C0A359C008EAFEE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5119C31E1C0A359C008EAFEE /* MapViewController.m */; };
+		5119C3211C0A5B2B008EAFEE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5119C3201C0A5B2B008EAFEE /* CoreLocation.framework */; };
 		515217CB1BE3F04000C29A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217CA1BE3F04000C29A59 /* main.m */; };
 		515217CE1BE3F04000C29A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217CD1BE3F04000C29A59 /* AppDelegate.m */; };
 		515217D71BE3F04000C29A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515217D51BE3F04000C29A59 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		5119C31D1C0A3548008EAFEE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5119C31E1C0A359C008EAFEE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5119C3201C0A5B2B008EAFEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		515217C61BE3F04000C29A59 /* rushapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rushapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515217CA1BE3F04000C29A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		515217CC1BE3F04000C29A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5119C3211C0A5B2B008EAFEE /* CoreLocation.framework in Frameworks */,
 				74B58EA21BFA8B8500EB7404 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +126,7 @@
 		515217BD1BE3F04000C29A59 = {
 			isa = PBXGroup;
 			children = (
+				5119C3201C0A5B2B008EAFEE /* CoreLocation.framework */,
 				7435BDDB1BFD7B7B00E9D0E0 /* It2ScriptV1.js */,
 				74B58EA11BFA8B8500EB7404 /* MapKit.framework */,
 				515217C81BE3F04000C29A59 /* rushapp */,

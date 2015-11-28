@@ -13,11 +13,13 @@
 
 //IBOutlet MKMapView *mapView;
 
-@interface MapViewController : UIViewController <MKMapViewDelegate> {
-    //MKMapView *mapView;
+@interface MapViewController : UIViewController <MKMapViewDelegate,CLLocationManagerDelegate> {
+    CLLocationCoordinate2D coord;
 }
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 - (IBAction)zoomIn:(id)sender;
 - (IBAction)changeMapType:(id)sender;
+- (IBAction)center:(id)sender;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
