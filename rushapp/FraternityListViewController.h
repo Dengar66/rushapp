@@ -12,4 +12,5 @@
 
 
 @property (nonatomic) NSArray * fraternityList;
+@property (nonatomic,strong) NSURLSession * session;
 @end

@@ -33,13 +33,14 @@
     self = [super init];
     if (self)
     {
-        //self.fraternityList = [self readFraternityJSON];
+        self.fraternityList = [self readFraternityJSON];
         //self.eventList = [self readEventJSON];
-       // self.addressList = [self getAddressesFromFraternityList];
+        //self.addressList = [self getAddressesFromFraternityList];
         //self.favoritedList = [NSMutableArray alloc];
     }
     return self;
 }
+
 //Parse through JSON files for needed data.
 -(NSMutableArray *)readFraternityJSON
 {
@@ -52,6 +53,7 @@
     }
     return fraternities;
 }
+
 -(NSMutableArray *)readEventJSON
 {
     NSArray * data = [self readJSON];
@@ -66,16 +68,30 @@
 //Method for reading in JSON files and returns an Array of dictionaries.
 -(NSArray *)readJSON
 {
-    NSURL * url = [NSURL fileURLWithPath:@"/Users/brettmeyer/Documents/test.json"];
-    NSError *error = nil;
+    NSURLSession * session;
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
     
-    NSString *jsonString =
-    [NSString stringWithContentsOfURL:url
-                             encoding:NSUTF8StringEncoding
-                                error:&error];
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray * data = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
-    return data;
+    NSString *requestString = @"https://hidden-stream-3045.herokuapp.com/fraternities.json";
+    NSURL *url = [NSURL URLWithString: requestString];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    NSURLSessionDataTask * dataTask = [session dataTaskWithRequest:req completionHandler:^(NSData * data, NSURLResponse * response, NSError * error){
+        NSString * json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSData *jsonData = [json dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray * dataFinal = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+        NSLog(@"%@",dataFinal);
+        NSMutableArray * fraternities = [NSMutableArray array];
+        
+        for (NSDictionary *dictionary in dataFinal) {
+            Fraternity * f = [[Fraternity alloc] initWithDictionary:dictionary];
+            [fraternities addObject:f];
+        }
+        self.fraternityList = fraternities;
+        
+    }];
+    
+    [dataTask resume];
+    return nil;
 }
 
 -(NSMutableArray *)getAddressesFromFraternityList
@@ -89,20 +105,6 @@
     return addresses;
 }
 
--(void)sortEventList
-{
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"time" ascending:TRUE];
-    [self.eventList sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-}
 
--(void)sortFraternityList
-{
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:TRUE];
-    [self.fraternityList sortUsingDescriptors:@[sortDescriptor]];
-}
--(void)addFraternityListObject:(Fraternity *)object
-{
-    [self.fraternityList addObject:object];
-}
 
 @end
