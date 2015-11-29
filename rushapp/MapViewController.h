@@ -17,9 +17,14 @@
     CLLocationCoordinate2D coord;
 }
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+- (void) viewWillAppear;
+//- (void) initViews;
+- (void) addAllPins;
+- (void) addPinWithTitle:(NSString *)title AndSub:(NSString *)subtitle AndCoordinate:(NSString *)strCoordinate;
 - (IBAction)zoomIn:(id)sender;
 - (IBAction)changeMapType:(id)sender;
 - (IBAction)center:(id)sender;
-@property (strong, nonatomic) CLLocationManager *locationManager;
+
 
 @end
