@@ -35,8 +35,6 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (coord, 800, 800);
     [_mapView setRegion:region animated:NO];
     
-    [self.view addSubview:self.mapView];
-    
     // add annotations
     [self addAllPins];
     
@@ -50,13 +48,9 @@
     }
     
     [_locationManager startUpdatingLocation];
-}
-
-/*-(void)initViews
-{
-    self.mapView = [[MKMapView alloc] init];
     
-}*/
+    [self.view addSubview:self.mapView];
+}
 
 -(void)addAllPins
 {

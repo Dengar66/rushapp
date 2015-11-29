@@ -149,12 +149,12 @@
                                 <action selector="zoomIn:" destination="Pi0-hP-eSu" id="Txn-BY-Fej"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Center" width="72" id="hdp-9N-K19">
+                        <barButtonItem title="Greek Row" width="98" id="hdp-9N-K19">
                             <connections>
                                 <action selector="center:" destination="Pi0-hP-eSu" id="MKS-vf-4AJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Change Map Type" id="oPF-My-8Fs">
+                        <barButtonItem title="Standard/Satellite" width="144" id="oPF-My-8Fs">
                             <connections>
                                 <action selector="changeMapType:" destination="Pi0-hP-eSu" id="XT3-1V-GKk"/>
                             </connections>
