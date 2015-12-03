@@ -19,7 +19,7 @@
 @implementation MapViewController
 
 - (void)viewWillAppear {
-    self.navigationController.toolbarHidden = NO;
+    [self.navigationController setToolbarHidden:NO];
 }
 
 - (void)viewDidLoad {
@@ -52,7 +52,7 @@
     [self.view addSubview:self.mapView];
 }
 
--(void)addAllPins
+- (void)addAllPins
 {
     self.mapView.delegate=self;
     
@@ -138,7 +138,7 @@
     }
 }
 
--(void) addPinWithTitle:(NSString *)title AndSub:(NSString *)subtitle AndCoordinate:(NSString *)strCoordinate
+- (void) addPinWithTitle:(NSString *)title AndSub:(NSString *)subtitle AndCoordinate:(NSString *)strCoordinate
 {
     MKPointAnnotation *mapPin = [[MKPointAnnotation alloc] init];
     
@@ -356,7 +356,7 @@
 
 - (IBAction)zoomIn:(id)sender {
     MKUserLocation *userLocation = _mapView.userLocation;
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, 2000, 2000);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, 200, 200);
     [_mapView setRegion:region animated:NO];
 }
 

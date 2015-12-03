@@ -93,7 +93,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="MAP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7p2-xz-gSD">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Map of Greek Houses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7p2-xz-gSD">
                                                     <rect key="frame" x="15" y="0.0" width="364" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
@@ -106,7 +106,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="Pi0-hP-eSu" kind="show" id="rzQ-Dy-Jms"/>
+                                            <segue destination="3th-CD-xX1" kind="show" id="B43-2A-6Ck"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -122,6 +122,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xd-8r-zEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="-706"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ct3-Fm-96Q">
+            <objects>
+                <navigationController toolbarHidden="NO" id="3th-CD-xX1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qxp-rh-980">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XTj-HW-qbt">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Pi0-hP-eSu" kind="relationship" relationship="rootViewController" id="jVF-Tg-lkr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7g-po-o5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="219"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="GXR-k7-1Vo">
@@ -160,14 +182,20 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="b5f-u7-EF8"/>
+                    <navigationItem key="navigationItem" id="7Gn-IG-fkV">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="qbA-mV-uvt">
+                            <connections>
+                                <segue destination="Ank-Mp-rYi" kind="show" id="h7o-7d-MIR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="mGS-vK-Mwk" id="Lgw-gW-2lF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqO-Q4-TB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="212"/>
+            <point key="canvasLocation" x="476" y="219"/>
         </scene>
         <!--Rush Info Controller-->
         <scene sceneID="U74-9Z-pbf">
@@ -380,7 +408,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMb-bn-OrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1281" y="212"/>
+            <point key="canvasLocation" x="983" y="219"/>
         </scene>
         <!--Fraternity List Controller-->
         <scene sceneID="rTA-Ql-U5O">
@@ -494,7 +522,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2n-ch-hAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437" y="-706"/>
+            <point key="canvasLocation" x="1507" y="-706"/>
         </scene>
         <!--Contact List View-->
         <scene sceneID="xsH-xw-CWI">
@@ -535,7 +563,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1g-zi-OJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2257" y="-442"/>
+            <point key="canvasLocation" x="2101" y="-706"/>
         </scene>
         <!--Fraternity Event List View-->
         <scene sceneID="zt4-vd-7if">
@@ -580,7 +608,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWI-gE-Ec7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233" y="-1357"/>
+            <point key="canvasLocation" x="2101" y="-1502"/>
         </scene>
         <!--Event Feed Controller-->
         <scene sceneID="6dg-M5-ccQ">
@@ -724,12 +752,12 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlE-2z-10t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="-1502"/>
+            <point key="canvasLocation" x="1507" y="-1502"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R85-d5-bku">
             <objects>
-                <navigationController toolbarHidden="NO" id="Ank-Mp-rYi" sceneMemberID="viewController">
+                <navigationController id="Ank-Mp-rYi" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4r-Cb-UjW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -13,6 +13,10 @@
 
 @implementation FraternityListViewController
 
+- (void)viewWillAppear {
+    [self.navigationController setToolbarHidden:YES];
+}
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];

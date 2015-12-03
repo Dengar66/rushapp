@@ -14,6 +14,10 @@
 
 @implementation FraternityContactListTableViewController
 
+- (void)viewWillAppear {
+    [self.navigationController setToolbarHidden:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fraternityContactList = @[@"Brett Meyer"];

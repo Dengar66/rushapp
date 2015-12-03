@@ -18,6 +18,10 @@
 
 @implementation FraternityInfoViewController
 
+- (void)viewWillAppear {
+    [self.navigationController setToolbarHidden:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fraternityName.text = @"ACAICA";

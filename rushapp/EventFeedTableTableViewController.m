@@ -14,6 +14,10 @@
 
 @implementation EventFeedTableTableViewController
 
+- (void)viewWillAppear {
+    [self.navigationController setToolbarHidden:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.eventList = [[NSMutableArray alloc] initWithObjects:@"Acacia - Grill Out: 5:00 PM", nil];

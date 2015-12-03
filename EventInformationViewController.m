@@ -19,6 +19,10 @@
 
 @implementation EventInformationViewController
 
+- (void)viewWillAppear {
+    [self.navigationController setToolbarHidden:YES];
+}
+
 - (void)viewDidLoad {
     self.fraternityName.text = @"Acacia";
     self.eventName.text = @"Grill out";

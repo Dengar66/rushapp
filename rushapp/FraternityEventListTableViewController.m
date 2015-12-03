@@ -14,6 +14,10 @@
 
 @implementation FraternityEventListTableViewController
 
+- (void)viewWillAppear {
+    [self.navigationController setToolbarHidden:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fraternityEventList = @[@"Acacia - Grill Out: 5:00 PM"];
