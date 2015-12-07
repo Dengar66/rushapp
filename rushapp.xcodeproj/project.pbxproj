@@ -18,6 +18,7 @@
 		515217F21BE3F04000C29A59 /* rushappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217F11BE3F04000C29A59 /* rushappUITests.m */; };
 		518EAFB41C1514B200A0E607 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EAFB31C1514B200A0E607 /* Launch Screen.storyboard */; };
 		7435BDDC1BFD7B7B00E9D0E0 /* It2ScriptV1.js in Resources */ = {isa = PBXBuildFile; fileRef = 7435BDDB1BFD7B7B00E9D0E0 /* It2ScriptV1.js */; };
+		7444B1211C162A4300AE0E07 /* GreekRushApp_SplashScreen_6Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 7444B1201C162A4300AE0E07 /* GreekRushApp_SplashScreen_6Plus.png */; };
 		747E19401BF93A17005D15EB /* FraternityInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */; };
 		747E19431BF93AC3005D15EB /* EventFeedTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */; };
 		747E19461BF95FC8005D15EB /* EventInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19451BF95FC8005D15EB /* EventInformationViewController.m */; };
@@ -69,6 +70,7 @@
 		515217F31BE3F04000C29A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518EAFB31C1514B200A0E607 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7435BDDB1BFD7B7B00E9D0E0 /* It2ScriptV1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = It2ScriptV1.js; sourceTree = "<group>"; };
+		7444B1201C162A4300AE0E07 /* GreekRushApp_SplashScreen_6Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreekRushApp_SplashScreen_6Plus.png; path = Assets.xcassets/LaunchImage.launchimage/GreekRushApp_SplashScreen_6Plus.png; sourceTree = "<group>"; };
 		747E193E1BF93A17005D15EB /* FraternityInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FraternityInfoViewController.h; sourceTree = "<group>"; };
 		747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityInfoViewController.m; sourceTree = "<group>"; };
 		747E19411BF93AC3005D15EB /* EventFeedTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventFeedTableTableViewController.h; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				5119C31D1C0A3548008EAFEE /* MapViewController.h */,
 				5119C31E1C0A359C008EAFEE /* MapViewController.m */,
 				515217D81BE3F04000C29A59 /* Assets.xcassets */,
+				7444B1201C162A4300AE0E07 /* GreekRushApp_SplashScreen_6Plus.png */,
 				515217DD1BE3F04000C29A59 /* Info.plist */,
 				518EAFB31C1514B200A0E607 /* Launch Screen.storyboard */,
 				515217C91BE3F04000C29A59 /* Supporting Files */,
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7435BDDC1BFD7B7B00E9D0E0 /* It2ScriptV1.js in Resources */,
+				7444B1211C162A4300AE0E07 /* GreekRushApp_SplashScreen_6Plus.png in Resources */,
 				515217D91BE3F04000C29A59 /* Assets.xcassets in Resources */,
 				518EAFB41C1514B200A0E607 /* Launch Screen.storyboard in Resources */,
 				515217D71BE3F04000C29A59 /* Main.storyboard in Resources */,

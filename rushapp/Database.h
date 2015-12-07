@@ -17,7 +17,4 @@
 //Initator
 +(instancetype) sharedDatabase;
 
-//Sort Arrays
--(void)sortEventList;
-
 @end

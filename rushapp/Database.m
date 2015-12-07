@@ -109,13 +109,13 @@
         NSData *jsonData = [json dataUsingEncoding:NSUTF8StringEncoding];
         NSArray * dataFinal = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
         NSLog(@"%@",dataFinal);
-        NSMutableArray * fraternities = [NSMutableArray array];
+        NSMutableArray * events = [NSMutableArray array];
         
         for (NSDictionary *dictionary in dataFinal) {
             Event * f = [[Event alloc] initWithDictionary:dictionary];
-            [eventList addObject:f];
+            [events addObject:f];
         }
-        self.fraternityList = fraternities;
+        self.eventList = events;
         
     }];
     
