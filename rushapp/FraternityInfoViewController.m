@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *fraternityName;
 @property (weak, nonatomic) IBOutlet UILabel *history;
 
+
 @end
 
 @implementation FraternityInfoViewController
@@ -24,9 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.fraternityName.text = @"ACAICA";
-    self.fraternityAddress.text = @"201 W lakelawn pl, Madison WI.";
-    self.history.text = @"Some interesting history here";
+    self.fraternityName.text = self.currentFraternity.fraternityName;
+    self.fraternityAddress.text = self.currentFraternity.address;
+    self.history.text = self.currentFraternity.history;
     // Do any additional setup after loading the view.
 }
 

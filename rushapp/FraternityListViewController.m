@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FraternityListViewController.h"
+#import "FraternityInfoViewController.h"
 #import "Fraternity.h"
 #import "Database.h"
 
@@ -47,6 +48,17 @@
     cell.textLabel.text = [self.fraternityList[indexPath.row] fraternityName];
     return cell;
 }
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    FraternityInfoViewController * vc = (FraternityInfoViewController *)[segue destinationViewController];
+    NSIndexPath * indexPath;
+    if ((indexPath = self.tableView.indexPathForSelectedRow)) {
+        Fraternity * f = self.fraternityList[indexPath.row];
+        vc.currentFraternity = f;
+    }
+    
+}
+
 - (IBAction)refresh {
     self.fraternityList = [[Database sharedDatabase] fraternityList];
     [self.tableView reloadData];
