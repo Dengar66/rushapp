@@ -35,6 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)favorite:(id)sender {
+    
+}
+
 /*
 #pragma mark - Navigation
 

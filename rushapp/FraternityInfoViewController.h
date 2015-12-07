@@ -10,4 +10,6 @@
 
 @interface FraternityInfoViewController : UIViewController
 
+- (IBAction)favorite:(id)sender;
+
 @end

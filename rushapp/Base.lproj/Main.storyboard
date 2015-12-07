@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="-706"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--MapNavController-->
         <scene sceneID="ct3-Fm-96Q">
             <objects>
-                <navigationController toolbarHidden="NO" id="3th-CD-xX1" sceneMemberID="viewController">
+                <navigationController title="MapNavController" toolbarHidden="NO" id="3th-CD-xX1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qxp-rh-980">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -505,6 +505,11 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-Is-qA2">
+                                <rect key="frame" x="325" y="471" width="69" height="30"/>
+                                <animations/>
+                                <state key="normal" title="FAVORITE"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -513,7 +518,6 @@ Above all, we want you to have a good time during recruitment, so take advantage
                             <constraint firstItem="1Ss-Y8-Sar" firstAttribute="centerX" secondItem="uRr-G7-weH" secondAttribute="centerX" id="Zpp-tS-6Ja"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="52Z-ip-d9b"/>
                     <connections>
                         <outlet property="fraternityAddress" destination="Fba-GH-TaY" id="EGn-b6-4Rn"/>
                         <outlet property="fraternityName" destination="1Ss-Y8-Sar" id="Zsq-7y-B8h"/>
