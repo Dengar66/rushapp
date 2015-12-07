@@ -16,7 +16,8 @@
 		515217D91BE3F04000C29A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515217D81BE3F04000C29A59 /* Assets.xcassets */; };
 		515217E71BE3F04000C29A59 /* rushappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217E61BE3F04000C29A59 /* rushappTests.m */; };
 		515217F21BE3F04000C29A59 /* rushappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515217F11BE3F04000C29A59 /* rushappUITests.m */; };
-		518EAFB21C150EAC00A0E607 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EAFB11C150EAC00A0E607 /* Launch Screen.storyboard */; };
+		518EAFB41C1514B200A0E607 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EAFB31C1514B200A0E607 /* Launch Screen.storyboard */; };
+		518EAFB61C1515E100A0E607 /* GreekRushApp_SplashScreen_6Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 518EAFB51C1515E100A0E607 /* GreekRushApp_SplashScreen_6Plus.png */; };
 		7435BDDC1BFD7B7B00E9D0E0 /* It2ScriptV1.js in Resources */ = {isa = PBXBuildFile; fileRef = 7435BDDB1BFD7B7B00E9D0E0 /* It2ScriptV1.js */; };
 		747E19401BF93A17005D15EB /* FraternityInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */; };
 		747E19431BF93AC3005D15EB /* EventFeedTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E19421BF93AC3005D15EB /* EventFeedTableTableViewController.m */; };
@@ -67,7 +68,8 @@
 		515217ED1BE3F04000C29A59 /* rushappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rushappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515217F11BE3F04000C29A59 /* rushappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rushappUITests.m; sourceTree = "<group>"; };
 		515217F31BE3F04000C29A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		518EAFB11C150EAC00A0E607 /* Launch Screen.storyboard */ = {isa = PBXFileReference; explicitFileType = image.png; fileEncoding = 4; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		518EAFB31C1514B200A0E607 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		518EAFB51C1515E100A0E607 /* GreekRushApp_SplashScreen_6Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreekRushApp_SplashScreen_6Plus.png; path = ../../../Dropbox/GreekRushApp/GreekRushApp_SplashScreen_6Plus.png; sourceTree = "<group>"; };
 		7435BDDB1BFD7B7B00E9D0E0 /* It2ScriptV1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = It2ScriptV1.js; sourceTree = "<group>"; };
 		747E193E1BF93A17005D15EB /* FraternityInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FraternityInfoViewController.h; sourceTree = "<group>"; };
 		747E193F1BF93A17005D15EB /* FraternityInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FraternityInfoViewController.m; sourceTree = "<group>"; };
@@ -180,9 +182,10 @@
 				5119C31D1C0A3548008EAFEE /* MapViewController.h */,
 				5119C31E1C0A359C008EAFEE /* MapViewController.m */,
 				515217D81BE3F04000C29A59 /* Assets.xcassets */,
+				518EAFB51C1515E100A0E607 /* GreekRushApp_SplashScreen_6Plus.png */,
 				515217DD1BE3F04000C29A59 /* Info.plist */,
+				518EAFB31C1514B200A0E607 /* Launch Screen.storyboard */,
 				515217C91BE3F04000C29A59 /* Supporting Files */,
-				518EAFB11C150EAC00A0E607 /* Launch Screen.storyboard */,
 			);
 			path = rushapp;
 			sourceTree = "<group>";
@@ -340,8 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7435BDDC1BFD7B7B00E9D0E0 /* It2ScriptV1.js in Resources */,
+				518EAFB61C1515E100A0E607 /* GreekRushApp_SplashScreen_6Plus.png in Resources */,
 				515217D91BE3F04000C29A59 /* Assets.xcassets in Resources */,
-				518EAFB21C150EAC00A0E607 /* Launch Screen.storyboard in Resources */,
+				518EAFB41C1514B200A0E607 /* Launch Screen.storyboard in Resources */,
 				515217D71BE3F04000C29A59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
