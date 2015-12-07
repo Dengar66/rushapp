@@ -112,8 +112,8 @@
         NSMutableArray * fraternities = [NSMutableArray array];
         
         for (NSDictionary *dictionary in dataFinal) {
-            Fraternity * f = [[Fraternity alloc] initWithDictionary:dictionary];
-            [fraternities addObject:f];
+            Event * f = [[Event alloc] initWithDictionary:dictionary];
+            [eventList addObject:f];
         }
         self.fraternityList = fraternities;
         
