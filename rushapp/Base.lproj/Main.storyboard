@@ -481,6 +481,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 <animations/>
                                 <state key="normal" title="Event List"/>
                                 <connections>
+                                    <action selector="eventListButton:" destination="TcC-ab-a1H" eventType="touchUpInside" id="9Re-NJ-j3W"/>
                                     <segue destination="391-NP-Q60" kind="show" id="zIj-ia-Iif"/>
                                 </connections>
                             </button>
@@ -489,6 +490,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 <animations/>
                                 <state key="normal" title="Contact List"/>
                                 <connections>
+                                    <action selector="contactListButton:" destination="TcC-ab-a1H" eventType="touchUpInside" id="I23-i3-F4Z"/>
                                     <segue destination="NHq-3g-1Se" kind="show" id="xwv-O5-wvT"/>
                                 </connections>
                             </button>

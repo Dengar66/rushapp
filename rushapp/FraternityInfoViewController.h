@@ -11,6 +11,8 @@
 
 @interface FraternityInfoViewController : UIViewController
 @property (weak,nonatomic)Fraternity * currentFraternity;
+@property (weak,nonatomic)NSString * nextScene;
+@property (weak,nonatomic)UIViewController * nextVC;
 - (IBAction)favorite:(id)sender;
 
 @end
