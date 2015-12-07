@@ -122,7 +122,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xd-8r-zEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="-706"/>
+            <point key="canvasLocation" x="476" y="-660"/>
         </scene>
         <!--MapNavController-->
         <scene sceneID="ct3-Fm-96Q">
@@ -184,9 +184,9 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="7Gn-IG-fkV">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="qbA-mV-uvt">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="qbA-mV-uvt">
                             <connections>
-                                <segue destination="Ank-Mp-rYi" kind="show" id="h7o-7d-MIR"/>
+                                <segue destination="PAY-vL-asg" kind="show" id="e3c-2s-Lkh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -451,11 +451,17 @@ Above all, we want you to have a good time during recruitment, so take advantage
                             <outlet property="delegate" destination="OYu-xO-4Gp" id="aJP-Ca-Gr3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="UW Fraternities" id="CHP-Am-6rs"/>
+                    <navigationItem key="navigationItem" title="UW Fraternities" id="CHP-Am-6rs">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="9F8-Dj-qfx">
+                            <connections>
+                                <segue destination="PAY-vL-asg" kind="show" id="dnd-1J-8bG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQO-NU-HLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="-706"/>
+            <point key="canvasLocation" x="983" y="-660"/>
         </scene>
         <!--Fraternity Information View-->
         <scene sceneID="jDg-Ed-H9t">
@@ -522,6 +528,13 @@ Above all, we want you to have a good time during recruitment, so take advantage
                             <constraint firstItem="mHM-Is-qA2" firstAttribute="trailing" secondItem="uRr-G7-weH" secondAttribute="trailingMargin" constant="5" id="tz3-UY-0Sl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Fraternity" id="U0M-Ic-QXp">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="wZP-ic-JJE">
+                            <connections>
+                                <segue destination="PAY-vL-asg" kind="show" id="RBw-kg-Y5O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="fraternityAddress" destination="Fba-GH-TaY" id="EGn-b6-4Rn"/>
                         <outlet property="fraternityName" destination="1Ss-Y8-Sar" id="Zsq-7y-B8h"/>
@@ -530,7 +543,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2n-ch-hAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="-706"/>
+            <point key="canvasLocation" x="1507" y="-660"/>
         </scene>
         <!--Contact List View-->
         <scene sceneID="xsH-xw-CWI">
@@ -568,30 +581,37 @@ Above all, we want you to have a good time during recruitment, so take advantage
                             <outlet property="delegate" destination="NHq-3g-1Se" id="L5q-VD-TvA"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Contacts" id="scT-8D-PMM">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="hqj-QN-mBS">
+                            <connections>
+                                <segue destination="PAY-vL-asg" kind="show" id="nWT-dK-7nY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1g-zi-OJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101" y="-706"/>
+            <point key="canvasLocation" x="2101" y="-660"/>
         </scene>
         <!--Fraternity Event List View-->
         <scene sceneID="zt4-vd-7if">
             <objects>
                 <tableViewController title="Fraternity Event List View" id="391-NP-Q60" customClass="FraternityEventListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="co1-0W-kau">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="cWW-s1-dtw" style="IBUITableViewCellStyleDefault" id="QDp-kE-Njt">
-                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QDp-kE-Njt" id="YgN-c9-JN9">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cWW-s1-dtw">
-                                            <rect key="frame" x="15" y="0.0" width="384" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -613,6 +633,13 @@ Above all, we want you to have a good time during recruitment, so take advantage
                             <outlet property="delegate" destination="391-NP-Q60" id="Lvo-8F-Sv2"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Events" id="hxb-e6-6tA">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="E50-AM-9ol">
+                            <connections>
+                                <segue destination="PAY-vL-asg" kind="show" id="cHd-ZV-b8A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWI-gE-Ec7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -658,13 +685,19 @@ Above all, we want you to have a good time during recruitment, so take advantage
                             <outlet property="delegate" destination="xu3-Ho-tC0" id="nkc-k0-STq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Event Feed" id="Iyx-41-DDy"/>
+                    <navigationItem key="navigationItem" title="Event Feed" id="Iyx-41-DDy">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="8Vc-P7-s3l">
+                            <connections>
+                                <segue destination="PAY-vL-asg" kind="show" id="Gdw-OT-F80"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoZ-7Y-RBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983" y="-1502"/>
         </scene>
-        <!--Event Information View Controller-->
+        <!--Event-->
         <scene sceneID="lXl-H2-IXM">
             <objects>
                 <viewController id="HYN-wY-fx7" customClass="EventInformationViewController" sceneMemberID="viewController">
@@ -750,6 +783,15 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Event" id="jne-Fj-NcZ">
+                        <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="3kB-fh-Efr">
+                            <connections>
+                                <segue destination="PAY-vL-asg" kind="show" id="hok-Fz-q6k"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="address" destination="xZ4-Pg-jTd" id="Zeq-2g-h4A"/>
                         <outlet property="date" destination="PkY-OP-H3g" id="RQL-VV-PqJ"/>
@@ -778,15 +820,20 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <animations/>
                     </toolbar>
                     <connections>
-                        <segue destination="PAY-vL-asg" kind="relationship" relationship="rootViewController" id="T9I-NG-uTT"/>
+                        <segue destination="xu3-Ho-tC0" kind="relationship" relationship="rootViewController" id="36y-9B-Cmp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9d-j0-Y1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="-706"/>
+            <point key="canvasLocation" x="-18" y="-1502"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UINavBarItem_Menu_2x.png" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="e3c-2s-Lkh"/>
+        <segue reference="EGV-fW-JC7"/>
         <segue reference="Fqv-YQ-wGf"/>
     </inferredMetricsTieBreakers>
 </document>
