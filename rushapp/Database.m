@@ -33,8 +33,8 @@
     self = [super init];
     if (self)
     {
-        self.fraternityList = [self readFraternityJSON];
-        //self.eventList = [self readEventJSON];
+        self.fraternityList = [self readFraternity];
+        self.eventList = [self readEvent];
         //self.addressList = [self getAddressesFromFraternityList];
         //self.favoritedList = [NSMutableArray alloc];
     }
@@ -42,9 +42,9 @@
 }
 
 //Parse through JSON files for needed data.
--(NSMutableArray *)readFraternityJSON
+-(NSMutableArray *)readFraternity
 {
-    NSArray * data = [self readJSON];
+    NSArray * data = [self readJSONFraternities];
     NSMutableArray * fraternities = [NSMutableArray array];
     
     for (NSDictionary *dictionary in data) {
@@ -54,9 +54,9 @@
     return fraternities;
 }
 
--(NSMutableArray *)readEventJSON
+-(NSMutableArray *)readEvent
 {
-    NSArray * data = [self readJSON];
+    NSArray * data = [self readJSONEvents];
     NSMutableArray * events = [NSMutableArray array];
     
     for (NSDictionary *dictionary in data) {
@@ -66,7 +66,7 @@
     return events;
 }
 //Method for reading in JSON files and returns an Array of dictionaries.
--(NSArray *)readJSON
+-(NSArray *)readJSONFraternities
 {
     NSURLSession * session;
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -94,6 +94,34 @@
     return nil;
 }
 
+//Method for reading in JSON files and returns an Array of dictionaries.
+-(NSArray *)readJSONEvents
+{
+    NSURLSession * session;
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+    
+    NSString *requestString = @"https://hidden-stream-3045.herokuapp.com/events.json";
+    NSURL *url = [NSURL URLWithString: requestString];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    NSURLSessionDataTask * dataTask = [session dataTaskWithRequest:req completionHandler:^(NSData * data, NSURLResponse * response, NSError * error){
+        NSString * json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSData *jsonData = [json dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray * dataFinal = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+        NSLog(@"%@",dataFinal);
+        NSMutableArray * fraternities = [NSMutableArray array];
+        
+        for (NSDictionary *dictionary in dataFinal) {
+            Fraternity * f = [[Fraternity alloc] initWithDictionary:dictionary];
+            [fraternities addObject:f];
+        }
+        self.fraternityList = fraternities;
+        
+    }];
+    
+    [dataTask resume];
+    return nil;
+}
 -(NSMutableArray *)getAddressesFromFraternityList
 {
     //TODO: create address object with fraternity name

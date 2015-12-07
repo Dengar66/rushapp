@@ -7,6 +7,8 @@
 //
 
 #import "EventFeedTableTableViewController.h"
+#import "EventInformationViewController.h"
+#import "Event.h"
 
 @interface EventFeedTableTableViewController ()
 
@@ -20,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.eventList = [[NSMutableArray alloc] initWithObjects:@"Acacia - Grill Out: 5:00 PM", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -97,14 +98,15 @@
 }
 */
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    EventInformationViewController * vc = (EventInformationViewController *)[segue destinationViewController];
+    NSIndexPath * indexPath;
+    if ((indexPath = self.tableView.indexPathForSelectedRow)) {
+        Event * e = self.eventList[indexPath.row];
+        vc.currentEvent = e;
+    }
+    
 }
-*/
 
 @end

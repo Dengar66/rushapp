@@ -25,10 +25,10 @@
 
 - (void)viewDidLoad {
     self.fraternityName.text = @"Acacia";
-    self.eventName.text = @"Grill out";
-    self.address.text = @"201 W Lakelawn Pl. Madison WI";
-    self.date.text = @"Monday 5:00 PM";
-    self.desc.text = @"Come enjoy some brats and burgers!";
+    self.eventName.text = self.currentEvent.eventName;
+    self.address.text = self.currentEvent.place;
+    self.date.text = @"Dec 7th: 5:00PM";//self.currentEvent.time;
+    self.desc.text = self.currentEvent.desc;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
