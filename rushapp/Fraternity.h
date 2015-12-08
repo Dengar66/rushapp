@@ -25,6 +25,8 @@
 @property (nonatomic) NSInteger fraternityID;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
+-(void)encodeWithCoder :(NSCoder *)encode;
+-(id) initWithCoder : (NSCoder *)decode;
 
 //-(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSArray *)contactList EventList:(NSArray *)eventList;
 @end

@@ -9,6 +9,7 @@
 #import "FraternityInfoViewController.h"
 #import "FraternityContactListTableViewController.h"
 #import "FraternityEventListTableViewController.h"
+#import "Database.h"
 
 @interface FraternityInfoViewController ()
 
@@ -46,7 +47,11 @@
     self.nextScene = @"Events";
 }
 
-- (IBAction)favorite:(id)sender {
+- (IBAction)favoriteButton:(id)sender {
+    Database * d = [Database sharedDatabase];
+    Fraternity * f = [[Fraternity alloc] init];
+    f.fraternityName = self.fraternityName.text;
+    [d.favoritedList addObject:f];
     
 }
 

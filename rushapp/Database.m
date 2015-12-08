@@ -36,7 +36,7 @@
         self.fraternityList = [self readFraternity];
         self.eventList = [self readEvent];
         //self.addressList = [self getAddressesFromFraternityList];
-        //self.favoritedList = [NSMutableArray alloc];
+        self.favoritedList = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -122,6 +122,7 @@
     [dataTask resume];
     return nil;
 }
+
 -(NSMutableArray *)getAddressesFromFraternityList
 {
     //TODO: create address object with fraternity name
@@ -134,5 +135,16 @@
 }
 
 
-
+-(NSString *) fraternityArchivePath
+{
+    NSArray * documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSString * documentDirectory = [documentDirectories firstObject];
+    
+    return [documentDirectory stringByAppendingPathComponent:@"fraternities.archive"];
+}
+- (BOOL) saveChangesToFavorited
+{
+    NSString * path = [self fraternityArchivePath];
+    return [NSKeyedArchiver archiveRootObject:self.favoritedList toFile:path];
+}
 @end

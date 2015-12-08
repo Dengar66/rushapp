@@ -55,4 +55,19 @@
     return [NSString stringWithFormat:@"Fraternity Name: %@\n Address: %@\n Event list:[%@] Contact List:[%@]",
             self.fraternityName, self.address, self.eventList, self.contactList];
 }
+
+- (void) encodeWithCoder:(NSCoder *)encode
+{
+    [encode encodeObject:self.fraternityName forKey:@"fraternityName"];
+}
+
+-(id) initWithCoder:(NSCoder *)decode
+{
+    self = [super init];
+    if(self)
+    {
+        _fraternityName = [decode decodeObjectForKey:@"fraternityName"];
+    }
+    return self;
+}
 @end
