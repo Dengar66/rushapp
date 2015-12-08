@@ -6,7 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 
-@interface Fraternity : NSObject
+@interface Fraternity : NSObject <NSCoding>
 /*{
     NSString * fraternityName;
     NSArray * contactList;

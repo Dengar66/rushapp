@@ -142,6 +142,7 @@
     
     return [documentDirectory stringByAppendingPathComponent:@"fraternities.archive"];
 }
+
 - (BOOL) saveChangesToFavorited
 {
     NSString * path = [self fraternityArchivePath];
