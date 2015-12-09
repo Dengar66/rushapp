@@ -25,13 +25,28 @@
     [self.refreshControl addTarget:self
                             action:@selector(refresh)
                   forControlEvents:UIControlEventValueChanged];
+    
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"No Current Events"
+                                          message:@"There are no events to display now."
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"OK action");
+                               }];
+    [alertController addAction:okAction];
+    
     double startTime = [[NSDate date] timeIntervalSince1970];
-
+    
     while ([self.eventList count] == 0) {
         [self refresh];
         double endTime = [[NSDate date] timeIntervalSince1970];
         if (endTime - startTime > 10) {
             //10 seconds have passed
+            [self presentViewController:alertController animated:YES completion:nil];
             break;
         }
     }
