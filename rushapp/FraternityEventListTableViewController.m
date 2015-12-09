@@ -57,7 +57,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = self.fraternityEventList[indexPath.row];
+    cell.textLabel.text = [self.fraternityEventList[indexPath.row] eventName];
     return cell;
 }
 

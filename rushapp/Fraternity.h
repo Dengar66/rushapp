@@ -6,7 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 
-@interface Fraternity : NSObject
+@interface Fraternity : NSObject <NSCoding>
 /*{
     NSString * fraternityName;
     NSArray * contactList;
@@ -17,14 +17,17 @@
 }*/
 
 @property (nonatomic) NSString * fraternityName;
-@property (nonatomic) NSMutableArray * contactList;
-@property (nonatomic) NSArray * eventList;
+@property (nonatomic) NSString * contact;
+@property (nonatomic) NSString * contactEmail;
+@property (nonatomic) NSMutableArray * eventList;
 @property (nonatomic) NSString * address;
 @property (nonatomic) NSString * history;
 @property (nonatomic) NSURL * url;
-@property (nonatomic) NSInteger fraternityID;
+@property (nonatomic) NSString * fraternityID;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
+-(void)encodeWithCoder :(NSCoder *)encode;
+-(id) initWithCoder : (NSCoder *)decode;
 
 //-(instancetype)initWithName:(NSString *) name Address:(NSString *) address ContactList:(NSArray *)contactList EventList:(NSArray *)eventList;
 @end

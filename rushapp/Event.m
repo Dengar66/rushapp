@@ -17,6 +17,7 @@
     
     if(self)
     {
+        self.fraternityid = @"0";
         self.eventName = eventName;
         self.place = place;
         self.desc = desc;
@@ -27,6 +28,7 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
+        self.fraternityid = [dictionary valueForKey:@"fraternity_id"];
         self.eventName = [dictionary valueForKey:@"name"];
         self.place = [dictionary valueForKey:@"location"];
         self.desc = [dictionary valueForKey:@"description"];

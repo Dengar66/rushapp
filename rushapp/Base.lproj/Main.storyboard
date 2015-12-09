@@ -38,7 +38,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="xu3-Ho-tC0" kind="show" id="EGV-fW-JC7"/>
+                                            <segue destination="Ank-Mp-rYi" kind="show" id="wB0-Ac-34F"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="23" textLabel="5S3-0v-Beo" style="IBUITableViewCellStyleDefault" id="NAT-HR-5jQ">
@@ -61,7 +61,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="OYu-xO-4Gp" kind="show" id="9yk-dM-M6N"/>
+                                            <segue destination="cVd-TZ-s4p" kind="show" id="dcP-Ue-nkv"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="11" textLabel="kiy-9N-1X4" style="IBUITableViewCellStyleDefault" id="xvk-ZV-fn5">
@@ -122,7 +122,43 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xd-8r-zEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="-660"/>
+            <point key="canvasLocation" x="492" y="-1579"/>
+        </scene>
+        <!--MenuNavController-->
+        <scene sceneID="qpB-Gz-5oO">
+            <objects>
+                <navigationController title="MenuNavController" id="4pY-lk-ORR" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mWJ-J4-QRn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PAY-vL-asg" kind="relationship" relationship="rootViewController" id="2NM-mC-nDW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Apf-jf-7QX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="-1579"/>
+        </scene>
+        <!--FratListNavController-->
+        <scene sceneID="VuM-7g-kid">
+            <objects>
+                <navigationController title="FratListNavController" id="cVd-TZ-s4p" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kaf-2i-IEI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OYu-xO-4Gp" kind="relationship" relationship="rootViewController" id="t2e-v2-xeh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3h-z2-KUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="-679"/>
         </scene>
         <!--MapNavController-->
         <scene sceneID="ct3-Fm-96Q">
@@ -186,7 +222,7 @@
                     <navigationItem key="navigationItem" id="7Gn-IG-fkV">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="qbA-mV-uvt">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="e3c-2s-Lkh"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="Fo5-Fx-Uv8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -409,7 +445,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMb-bn-OrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="219"/>
+            <point key="canvasLocation" x="1587" y="219"/>
         </scene>
         <!--Fraternity List Controller-->
         <scene sceneID="rTA-Ql-U5O">
@@ -454,14 +490,14 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <navigationItem key="navigationItem" title="UW Fraternities" id="CHP-Am-6rs">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="9F8-Dj-qfx">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="dnd-1J-8bG"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="m9P-D3-qu5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQO-NU-HLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="-660"/>
+            <point key="canvasLocation" x="492" y="-679"/>
         </scene>
         <!--Fraternity Information View-->
         <scene sceneID="jDg-Ed-H9t">
@@ -475,13 +511,6 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fba-GH-TaY">
-                                <rect key="frame" x="20" y="121" width="374" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A42-T0-daU">
                                 <rect key="frame" x="15" y="516" width="67" height="30"/>
                                 <animations/>
@@ -507,43 +536,43 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fraternity Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ss-Y8-Sar">
-                                <rect key="frame" x="20" y="80" width="374" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-Is-qA2">
+                                <rect key="frame" x="325" y="471" width="69" height="30"/>
+                                <animations/>
+                                <state key="normal" title="FAVORITE"/>
+                                <connections>
+                                    <action selector="favoriteButton:" destination="TcC-ab-a1H" eventType="touchUpInside" id="99I-oV-ENu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fba-GH-TaY">
+                                <rect key="frame" x="20" y="121" width="374" height="85"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-Is-qA2">
-                                <rect key="frame" x="325" y="471" width="69" height="30"/>
-                                <animations/>
-                                <state key="normal" title="FAVORITE"/>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Ss-Y8-Sar" firstAttribute="width" secondItem="uRr-G7-weH" secondAttribute="width" id="6zD-CU-LVr"/>
-                            <constraint firstItem="1Ss-Y8-Sar" firstAttribute="centerX" secondItem="uRr-G7-weH" secondAttribute="centerX" id="Zpp-tS-6Ja"/>
                             <constraint firstItem="mHM-Is-qA2" firstAttribute="trailing" secondItem="uRr-G7-weH" secondAttribute="trailingMargin" constant="5" id="tz3-UY-0Sl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fraternity" id="U0M-Ic-QXp">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="wZP-ic-JJE">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="RBw-kg-Y5O"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="AJv-Uv-mR9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="fraternityAddress" destination="Fba-GH-TaY" id="EGn-b6-4Rn"/>
-                        <outlet property="fraternityName" destination="1Ss-Y8-Sar" id="Zsq-7y-B8h"/>
                         <outlet property="history" destination="NeQ-zf-IHj" id="FOU-Yp-cn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2n-ch-hAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="-660"/>
+            <point key="canvasLocation" x="1019" y="-679"/>
         </scene>
         <!--Contact List View-->
         <scene sceneID="xsH-xw-CWI">
@@ -584,34 +613,34 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <navigationItem key="navigationItem" title="Contacts" id="scT-8D-PMM">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="hqj-QN-mBS">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="nWT-dK-7nY"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="ulS-RR-bao"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1g-zi-OJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101" y="-660"/>
+            <point key="canvasLocation" x="1587" y="-679"/>
         </scene>
         <!--Fraternity Event List View-->
         <scene sceneID="zt4-vd-7if">
             <objects>
                 <tableViewController title="Fraternity Event List View" id="391-NP-Q60" customClass="FraternityEventListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="co1-0W-kau">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="cWW-s1-dtw" style="IBUITableViewCellStyleDefault" id="QDp-kE-Njt">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QDp-kE-Njt" id="YgN-c9-JN9">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cWW-s1-dtw">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="384" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -636,14 +665,14 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <navigationItem key="navigationItem" title="Events" id="hxb-e6-6tA">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="E50-AM-9ol">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="cHd-ZV-b8A"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="wE8-DZ-8vb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWI-gE-Ec7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101" y="-1502"/>
+            <point key="canvasLocation" x="1587" y="-1579"/>
         </scene>
         <!--Event Feed Controller-->
         <scene sceneID="6dg-M5-ccQ">
@@ -688,14 +717,14 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <navigationItem key="navigationItem" title="Event Feed" id="Iyx-41-DDy">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="8Vc-P7-s3l">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="Gdw-OT-F80"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="33V-wk-csw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoZ-7Y-RBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="-1502"/>
+            <point key="canvasLocation" x="1019" y="-2490"/>
         </scene>
         <!--Event-->
         <scene sceneID="lXl-H2-IXM">
@@ -723,57 +752,43 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NF-Hh-RC7">
-                                <rect key="frame" x="20" y="101" width="102" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e96-Rz-aVj">
-                                <rect key="frame" x="20" y="130" width="47" height="21"/>
+                                <rect key="frame" x="20" y="101" width="47" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yha-NK-QMb">
-                                <rect key="frame" x="20" y="159" width="43" height="21"/>
+                                <rect key="frame" x="20" y="130" width="43" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2O-C3-3Tc">
-                                <rect key="frame" x="20" y="188" width="93" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jga-lC-cEf">
-                                <rect key="frame" x="123" y="101" width="271" height="21"/>
+                                <rect key="frame" x="20" y="159" width="93" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-Pg-jTd">
-                                <rect key="frame" x="75" y="130" width="319" height="21"/>
+                                <rect key="frame" x="75" y="101" width="319" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkY-OP-H3g">
-                                <rect key="frame" x="75" y="159" width="319" height="21"/>
+                                <rect key="frame" x="75" y="130" width="319" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycI-Bu-JU8">
-                                <rect key="frame" x="20" y="217" width="319" height="31"/>
+                                <rect key="frame" x="20" y="188" width="374" height="94"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -787,7 +802,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                     <navigationItem key="navigationItem" title="Event" id="jne-Fj-NcZ">
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="3kB-fh-Efr">
                             <connections>
-                                <segue destination="PAY-vL-asg" kind="show" id="hok-Fz-q6k"/>
+                                <segue destination="4pY-lk-ORR" kind="show" id="pvx-ag-iIp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -796,13 +811,12 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <outlet property="address" destination="xZ4-Pg-jTd" id="Zeq-2g-h4A"/>
                         <outlet property="date" destination="PkY-OP-H3g" id="RQL-VV-PqJ"/>
                         <outlet property="desc" destination="ycI-Bu-JU8" id="5w4-di-lNQ"/>
-                        <outlet property="eventName" destination="jga-lC-cEf" id="dzJ-CY-5FG"/>
                         <outlet property="fraternityName" destination="3RE-SK-I5U" id="6Li-HW-yxE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlE-2z-10t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="-1502"/>
+            <point key="canvasLocation" x="1587" y="-2490"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R85-d5-bku">
@@ -825,15 +839,14 @@ Above all, we want you to have a good time during recruitment, so take advantage
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9d-j0-Y1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="-1502"/>
+            <point key="canvasLocation" x="-18" y="-2490"/>
         </scene>
     </scenes>
     <resources>
         <image name="UINavBarItem_Menu_2x.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e3c-2s-Lkh"/>
-        <segue reference="EGV-fW-JC7"/>
+        <segue reference="pvx-ag-iIp"/>
         <segue reference="Fqv-YQ-wGf"/>
     </inferredMetricsTieBreakers>
 </document>
