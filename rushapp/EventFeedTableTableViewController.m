@@ -25,6 +25,9 @@
     [self.refreshControl addTarget:self
                             action:@selector(refresh)
                   forControlEvents:UIControlEventValueChanged];
+    while ([self.eventList count] == 0) {
+        [self refresh];
+    }
 
 }
 
