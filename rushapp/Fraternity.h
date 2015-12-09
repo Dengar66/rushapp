@@ -17,7 +17,8 @@
 }*/
 
 @property (nonatomic) NSString * fraternityName;
-@property (nonatomic) NSMutableArray * contactList;
+@property (nonatomic) NSString * contact;
+@property (nonatomic) NSString * contactEmail;
 @property (nonatomic) NSMutableArray * eventList;
 @property (nonatomic) NSString * address;
 @property (nonatomic) NSString * history;

@@ -12,7 +12,7 @@
 @property (nonatomic) NSString * eventName;
 @property (nonatomic) NSString * place;
 @property (nonatomic) NSString * desc;
-@property (nonatomic) NSDate * time;
+@property (nonatomic) NSString * time;
 @property (nonatomic) NSString * fraternityid;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;

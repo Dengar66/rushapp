@@ -30,6 +30,8 @@
         self.address = [dictionary valueForKey:@"location"];
         self.history = [dictionary valueForKey:@"history"];
         self.fraternityID = [dictionary valueForKey:@"id"];
+        self.contact = [dictionary valueForKey:@"positions"];
+        self.contactEmail = [dictionary valueForKey:@"email"];
         //[self setContactList];
     }
     return self;
@@ -54,7 +56,7 @@
 -(NSString *)description
 {
     return [NSString stringWithFormat:@"Fraternity Name: %@\n Address: %@\n Event list:[%@] Contact List:[%@]",
-            self.fraternityName, self.address, self.eventList, self.contactList];
+            self.fraternityName, self.address, self.eventList, self.contact];
 }
 
 - (void) encodeWithCoder:(NSCoder *)encode

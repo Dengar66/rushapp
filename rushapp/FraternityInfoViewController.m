@@ -15,7 +15,6 @@
 @interface FraternityInfoViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *fraternityAddress;
-@property (weak, nonatomic) IBOutlet UILabel *fraternityName;
 @property (weak, nonatomic) IBOutlet UILabel *history;
 
 
@@ -29,11 +28,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.fraternityName.text = self.currentFraternity.fraternityName;
+    self.navigationItem.title = self.currentFraternity.fraternityName;
+    self.history.numberOfLines = 0;
+    self.fraternityAddress.numberOfLines = 0;
     self.fraternityAddress.text = self.currentFraternity.address;
     self.history.text = self.currentFraternity.history;
-    self.currentFraternity.eventList = [[NSMutableArray alloc]init];
-    self.currentFraternity.contactList = @[@"BRETT MEYER"];
     // Do any additional setup after loading the view.
 }
 
@@ -51,7 +50,7 @@
 - (IBAction)favoriteButton:(id)sender {
     Database * d = [Database sharedDatabase];
     Fraternity * f = [[Fraternity alloc] init];
-    f.fraternityName = self.fraternityName.text;
+    f.fraternityName = self.currentFraternity.fraternityName;
     [d.favoritedList addObject:f];
     
 }
@@ -60,7 +59,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([self.nextScene  isEqual: @"Contacts"]) {
         FraternityContactListTableViewController * vc = (FraternityContactListTableViewController *)[segue destinationViewController];
-        vc.fraternityContactList = self.currentFraternity.contactList;
+        vc.fraternityContactList = [[NSMutableArray alloc]init];
+        NSString * contact = self.currentFraternity.contact;
+        [vc.fraternityContactList addObject:contact];
     }
     if ([self.nextScene isEqual:@"Events"]) {
         FraternityEventListTableViewController * vc = (FraternityEventListTableViewController *)[segue destinationViewController];
