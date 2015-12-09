@@ -7,6 +7,9 @@
 //
 
 #import "EventInformationViewController.h"
+#import "Fraternity.h"
+#import "Event.h"
+#import "Database.h"
 
 @interface EventInformationViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *eventName;
@@ -24,11 +27,19 @@
 }
 
 - (void)viewDidLoad {
-    self.fraternityName.text = @"Acacia";
-    self.eventName.text = self.currentEvent.eventName;
-    self.address.text = self.currentEvent.place;
-    self.date.text = @"Dec 7th: 5:00PM";//self.currentEvent.time;
     self.desc.text = self.currentEvent.desc;
+    self.desc.numberOfLines = 0;
+    self.navigationItem.title = self.currentEvent.eventName;
+    for (Fraternity * f in [[Database sharedDatabase] fraternityList]) {
+        if([f.fraternityID isEqual:self.currentEvent.fraternityid])
+        {
+            self.fraternityName.text = f.fraternityName;
+        }
+    }
+    self.address.text = self.currentEvent.place;
+    self.date.text = self.currentEvent.time;
+    self.desc.text = self.currentEvent.desc;
+    [self.desc sizeToFit];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

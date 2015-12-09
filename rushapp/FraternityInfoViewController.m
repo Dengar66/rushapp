@@ -9,11 +9,12 @@
 #import "FraternityInfoViewController.h"
 #import "FraternityContactListTableViewController.h"
 #import "FraternityEventListTableViewController.h"
+#import "Database.h"
+#import "Event.h"
 
 @interface FraternityInfoViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *fraternityAddress;
-@property (weak, nonatomic) IBOutlet UILabel *fraternityName;
 @property (weak, nonatomic) IBOutlet UILabel *history;
 
 
@@ -27,11 +28,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.fraternityName.text = self.currentFraternity.fraternityName;
+    self.navigationItem.title = self.currentFraternity.fraternityName;
+    self.history.numberOfLines = 0;
+    self.fraternityAddress.numberOfLines = 0;
     self.fraternityAddress.text = self.currentFraternity.address;
     self.history.text = self.currentFraternity.history;
-    self.currentFraternity.contactList = @[@"BRETT MEYER"];
-    self.currentFraternity.eventList = @[@"TEST EVENT 0"];
     // Do any additional setup after loading the view.
 }
 
@@ -46,7 +47,11 @@
     self.nextScene = @"Events";
 }
 
-- (IBAction)favorite:(id)sender {
+- (IBAction)favoriteButton:(id)sender {
+    Database * d = [Database sharedDatabase];
+    Fraternity * f = [[Fraternity alloc] init];
+    f.fraternityName = self.currentFraternity.fraternityName;
+    [d.favoritedList addObject:f];
     
 }
 
@@ -54,11 +59,23 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([self.nextScene  isEqual: @"Contacts"]) {
         FraternityContactListTableViewController * vc = (FraternityContactListTableViewController *)[segue destinationViewController];
-        vc.fraternityContactList = self.currentFraternity.contactList;
+        vc.fraternityContactList = [[NSMutableArray alloc]init];
+        NSString * contact = self.currentFraternity.contact;
+        NSString * email = self.currentFraternity.contactEmail;
+        NSString * dash = @" - ";
+        NSString * fullContact = [contact stringByAppendingString:dash];
+        NSString * c = [fullContact stringByAppendingString:email];
+        [vc.fraternityContactList addObject:c];
     }
-    if ([self.nextScene isEqualToString:@"Events"]) {
+    if ([self.nextScene isEqual:@"Events"]) {
         FraternityEventListTableViewController * vc = (FraternityEventListTableViewController *)[segue destinationViewController];
-        vc.fraternityEventList = self.currentFraternity.eventList;
+        vc.fraternityEventList = [[NSMutableArray alloc] init];
+        for (Event * e in [[Database sharedDatabase] eventList]) {
+            if ([e.fraternityid isEqual:self.currentFraternity.fraternityID])
+            {
+                [vc.fraternityEventList addObject:e];
+            }
+        }
     }
 }
 

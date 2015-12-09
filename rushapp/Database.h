@@ -12,7 +12,12 @@
 @property (nonatomic) NSArray * eventList;
 @property (nonatomic) NSArray * temp;
 @property (nonatomic) NSData * jsonData;
-//@property (nonatomic) NSMutableArray * favoritedList;
+@property (nonatomic) NSMutableArray * favoritedList;
+
+
+
+-(NSString *) fraternityArchivePath;
+- (BOOL) saveChangesToFavorited;
 
 //Initator
 +(instancetype) sharedDatabase;
