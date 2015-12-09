@@ -10,6 +10,7 @@
 #import "FraternityContactListTableViewController.h"
 #import "FraternityEventListTableViewController.h"
 #import "Database.h"
+#import "Event.h"
 
 @interface FraternityInfoViewController ()
 
@@ -31,8 +32,8 @@
     self.fraternityName.text = self.currentFraternity.fraternityName;
     self.fraternityAddress.text = self.currentFraternity.address;
     self.history.text = self.currentFraternity.history;
+    self.currentFraternity.eventList = [[NSMutableArray alloc]init];
     self.currentFraternity.contactList = @[@"BRETT MEYER"];
-    self.currentFraternity.eventList = @[@"TEST EVENT 0"];
     // Do any additional setup after loading the view.
 }
 
@@ -61,9 +62,15 @@
         FraternityContactListTableViewController * vc = (FraternityContactListTableViewController *)[segue destinationViewController];
         vc.fraternityContactList = self.currentFraternity.contactList;
     }
-    if ([self.nextScene isEqualToString:@"Events"]) {
+    if ([self.nextScene isEqual:@"Events"]) {
         FraternityEventListTableViewController * vc = (FraternityEventListTableViewController *)[segue destinationViewController];
-        vc.fraternityEventList = self.currentFraternity.eventList;
+        vc.fraternityEventList = [[NSMutableArray alloc] init];
+        for (Event * e in [[Database sharedDatabase] eventList]) {
+            if ([e.fraternityid isEqual:self.currentFraternity.fraternityID])
+            {
+                [vc.fraternityEventList addObject:e];
+            }
+        }
     }
 }
 

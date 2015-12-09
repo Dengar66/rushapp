@@ -21,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self refresh];
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self
+                            action:@selector(refresh)
+                  forControlEvents:UIControlEventValueChanged];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,9 +62,11 @@
     }
     
 }
+
 - (IBAction)refresh {
     self.eventList = [[Database sharedDatabase] eventList];
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 
 @end

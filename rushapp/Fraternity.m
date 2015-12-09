@@ -29,6 +29,7 @@
         self.fraternityName = [dictionary valueForKey:@"name"];
         self.address = [dictionary valueForKey:@"location"];
         self.history = [dictionary valueForKey:@"history"];
+        self.fraternityID = [dictionary valueForKey:@"id"];
         //[self setContactList];
     }
     return self;

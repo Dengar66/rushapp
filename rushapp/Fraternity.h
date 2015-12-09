@@ -18,11 +18,11 @@
 
 @property (nonatomic) NSString * fraternityName;
 @property (nonatomic) NSMutableArray * contactList;
-@property (nonatomic) NSArray * eventList;
+@property (nonatomic) NSMutableArray * eventList;
 @property (nonatomic) NSString * address;
 @property (nonatomic) NSString * history;
 @property (nonatomic) NSURL * url;
-@property (nonatomic) NSInteger fraternityID;
+@property (nonatomic) NSString * fraternityID;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 -(void)encodeWithCoder :(NSCoder *)encode;

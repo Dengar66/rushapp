@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FraternityEventListTableViewController : UITableViewController
-@property (nonatomic) NSArray * fraternityEventList;
+@property (nonatomic) NSMutableArray * fraternityEventList;
 @end
