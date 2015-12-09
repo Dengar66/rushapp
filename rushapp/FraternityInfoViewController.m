@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = self.currentFraternity.fraternityName;
+    //self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.history.numberOfLines = 0;
     self.fraternityAddress.numberOfLines = 0;
     self.fraternityAddress.text = self.currentFraternity.address;

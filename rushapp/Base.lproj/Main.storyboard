@@ -488,6 +488,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="UW Fraternities" id="CHP-Am-6rs">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="usf-hV-QLw"/>
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="9F8-Dj-qfx">
                             <connections>
                                 <segue destination="4pY-lk-ORR" kind="show" id="m9P-D3-qu5"/>
@@ -559,6 +560,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fraternity" id="U0M-Ic-QXp">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KD4-7G-SeO"/>
                         <barButtonItem key="rightBarButtonItem" image="UINavBarItem_Menu_2x.png" id="wZP-ic-JJE">
                             <connections>
                                 <segue destination="4pY-lk-ORR" kind="show" id="AJv-Uv-mR9"/>
@@ -846,7 +848,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
         <image name="UINavBarItem_Menu_2x.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pvx-ag-iIp"/>
         <segue reference="Fqv-YQ-wGf"/>
+        <segue reference="AJv-Uv-mR9"/>
     </inferredMetricsTieBreakers>
 </document>
