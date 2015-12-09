@@ -61,7 +61,10 @@
     if ([self.nextScene  isEqual: @"Contacts"]) {
         FraternityContactListTableViewController * vc = (FraternityContactListTableViewController *)[segue destinationViewController];
         vc.fraternityContactList = [[NSMutableArray alloc]init];
-        NSString * contact = self.currentFraternity.contact;
+        NSString * c = self.currentFraternity.contactEmail;
+        NSString * con = self.currentFraternity.contact;
+        NSString * x = [con stringByAppendingString:@" - "];
+        NSString * contact = [x stringByAppendingString:c];
         [vc.fraternityContactList addObject:contact];
     }
     if ([self.nextScene isEqual:@"Events"]) {
