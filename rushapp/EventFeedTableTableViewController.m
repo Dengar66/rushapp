@@ -25,10 +25,16 @@
     [self.refreshControl addTarget:self
                             action:@selector(refresh)
                   forControlEvents:UIControlEventValueChanged];
+    double startTime = [[NSDate date] timeIntervalSince1970];
+
     while ([self.eventList count] == 0) {
         [self refresh];
+        double endTime = [[NSDate date] timeIntervalSince1970];
+        if (endTime - startTime > 10) {
+            //10 seconds have passed
+            break;
+        }
     }
-
 }
 
 - (void)didReceiveMemoryWarning {
