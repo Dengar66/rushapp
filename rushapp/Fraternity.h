@@ -15,7 +15,6 @@
     NSString * history;
     NSURL * url;
 }*/
-
 @property (nonatomic) NSString * fraternityName;
 @property (nonatomic) NSString * contact;
 @property (nonatomic) NSString * contactEmail;

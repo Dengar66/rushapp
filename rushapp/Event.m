@@ -22,6 +22,8 @@
         self.place = place;
         self.desc = desc;
         self.time = time;
+        self.imageName = @"acacia-flag.png";
+
     }
     return self;
 }

@@ -10,6 +10,7 @@
 #import "EventInformationViewController.h"
 #import "Event.h"
 #import "Database.h"
+#import "EventFeedTableViewCell.h"
 
 
 @implementation EventFeedTableTableViewController
@@ -64,14 +65,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = @"cell";
     
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    EventFeedTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
-    
-    cell.textLabel.text = [self.eventList[indexPath.row] eventName];
+
+    cell.eventName.text = [self.eventList[indexPath.row] eventName];
+    cell.information.text = [self.eventList[indexPath.row] place];
+    UIImage * image = [UIImage imageNamed:[self.eventList[indexPath.row] imageName]];
+    cell.imageView.image = image;
     return cell;
 }
 

@@ -14,6 +14,7 @@
 @property (nonatomic) NSString * desc;
 @property (nonatomic) NSString * time;
 @property (nonatomic) NSString * fraternityid;
+@property (nonatomic) NSString * imageName;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
