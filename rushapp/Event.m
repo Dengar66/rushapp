@@ -22,7 +22,6 @@
         self.place = place;
         self.desc = desc;
         self.time = time;
-        self.imageName = @"acacia-flag.png";
 
     }
     return self;
@@ -35,6 +34,7 @@
         self.place = [dictionary valueForKey:@"location"];
         self.desc = [dictionary valueForKey:@"description"];
         self.time = [dictionary valueForKey:@"date"];
+        self.imageName = @"acacia-flag.png";
     }
     return self;
 }

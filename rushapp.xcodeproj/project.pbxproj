@@ -162,7 +162,6 @@
 		515217C81BE3F04000C29A59 /* rushapp */ = {
 			isa = PBXGroup;
 			children = (
-				74D5A4A21C667F5800FE1F47 /* acacia-flag.png */,
 				515217CC1BE3F04000C29A59 /* AppDelegate.h */,
 				515217CD1BE3F04000C29A59 /* AppDelegate.m */,
 				74D5A49E1C667AFA00FE1F47 /* EventFeedTableViewCell.h */,
@@ -231,6 +230,7 @@
 		74D5A4A11C667F3100FE1F47 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				74D5A4A21C667F5800FE1F47 /* acacia-flag.png */,
 			);
 			name = images;
 			path = rushapp;

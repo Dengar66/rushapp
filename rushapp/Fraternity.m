@@ -61,9 +61,7 @@
 
 - (void) encodeWithCoder:(NSCoder *)encode
 {
-    [encode encodeObject:self.fraternityName forKey:@"fraternityName"];
-    int x = 0;
-    
+    [encode encodeObject:self.fraternityName forKey:@"fraternityName"];    
 }
 
 -(id) initWithCoder:(NSCoder *)decode
