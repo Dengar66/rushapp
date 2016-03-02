@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.image.contentMode = UIViewContentModeScaleAspectFill;
+    //self.image.alignmentRectInsets = {0,0,0,0};
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
