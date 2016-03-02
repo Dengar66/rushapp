@@ -512,7 +512,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A42-T0-daU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A42-T0-daU">
                                 <rect key="frame" x="15" y="516" width="67" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Event List"/>
@@ -521,7 +521,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                     <segue destination="391-NP-Q60" kind="show" id="zIj-ia-Iif"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-EI-SQ4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-EI-SQ4">
                                 <rect key="frame" x="15" y="471" width="83" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Contact List"/>
@@ -530,14 +530,17 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                     <segue destination="NHq-3g-1Se" kind="show" id="xwv-O5-wvT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-zf-IHj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-zf-IHj">
                                 <rect key="frame" x="20" y="214" width="374" height="142"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="oX0-cf-mZb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-Is-qA2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-Is-qA2">
                                 <rect key="frame" x="325" y="471" width="69" height="30"/>
                                 <animations/>
                                 <state key="normal" title="FAVORITE"/>
@@ -545,9 +548,12 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                     <action selector="favoriteButton:" destination="TcC-ab-a1H" eventType="touchUpInside" id="99I-oV-ENu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fba-GH-TaY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fba-GH-TaY">
                                 <rect key="frame" x="20" y="121" width="374" height="85"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="yxq-kg-jy9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -556,7 +562,18 @@ Above all, we want you to have a good time during recruitment, so take advantage
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mHM-Is-qA2" firstAttribute="trailing" secondItem="uRr-G7-weH" secondAttribute="trailingMargin" constant="5" id="tz3-UY-0Sl"/>
+                            <constraint firstItem="q2Y-k5-mcG" firstAttribute="top" secondItem="mHM-Is-qA2" secondAttribute="bottom" constant="235" id="FgX-qq-NYa"/>
+                            <constraint firstItem="f9H-EI-SQ4" firstAttribute="baseline" secondItem="mHM-Is-qA2" secondAttribute="baseline" id="QT6-CJ-pAs"/>
+                            <constraint firstItem="f9H-EI-SQ4" firstAttribute="leading" secondItem="A42-T0-daU" secondAttribute="leading" id="RGu-JK-aN7"/>
+                            <constraint firstItem="Fba-GH-TaY" firstAttribute="top" secondItem="ADV-Br-77z" secondAttribute="bottom" constant="57" id="RhI-IA-a0D"/>
+                            <constraint firstItem="NeQ-zf-IHj" firstAttribute="leading" secondItem="Fba-GH-TaY" secondAttribute="leading" id="YyB-ed-zaS"/>
+                            <constraint firstItem="mHM-Is-qA2" firstAttribute="trailing" secondItem="uRr-G7-weH" secondAttribute="trailingMargin" id="dWJ-ze-MNF"/>
+                            <constraint firstItem="A42-T0-daU" firstAttribute="top" secondItem="f9H-EI-SQ4" secondAttribute="bottom" constant="15" id="fqt-Tv-9CR"/>
+                            <constraint firstItem="NeQ-zf-IHj" firstAttribute="trailing" secondItem="mHM-Is-qA2" secondAttribute="trailing" id="hU9-Xr-72u"/>
+                            <constraint firstItem="NeQ-zf-IHj" firstAttribute="top" secondItem="Fba-GH-TaY" secondAttribute="bottom" constant="8" symbolic="YES" id="jBa-dy-aeK"/>
+                            <constraint firstItem="Fba-GH-TaY" firstAttribute="leading" secondItem="uRr-G7-weH" secondAttribute="leadingMargin" id="lPk-6U-1TL"/>
+                            <constraint firstItem="f9H-EI-SQ4" firstAttribute="leading" secondItem="uRr-G7-weH" secondAttribute="leadingMargin" constant="-5" id="q0L-oi-crX"/>
+                            <constraint firstItem="NeQ-zf-IHj" firstAttribute="trailing" secondItem="Fba-GH-TaY" secondAttribute="trailing" id="tRS-QU-ZLI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fraternity" id="U0M-Ic-QXp">
@@ -694,19 +711,19 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-2P-bHn">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-2P-bHn">
                                             <rect key="frame" x="8" y="1" width="398" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0G-bC-Gw9">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0G-bC-Gw9">
                                             <rect key="frame" x="8" y="178" width="398" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-n4-uo5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-n4-uo5">
                                             <rect key="frame" x="0.0" y="207" width="414" height="2"/>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -714,16 +731,31 @@ Above all, we want you to have a good time during recruitment, so take advantage
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-vK-uig">
-                                            <rect key="frame" x="0.0" y="30" width="414" height="140"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="acacia-flag.png" translatesAutoresizingMaskIntoConstraints="NO" id="8wo-cx-hq0">
+                                            <rect key="frame" x="87" y="30" width="240" height="140"/>
                                             <animations/>
                                         </imageView>
                                     </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="V0G-bC-Gw9" firstAttribute="leading" secondItem="WSi-sc-4Jc" secondAttribute="leading" constant="8" id="KBz-gS-unM"/>
+                                        <constraint firstAttribute="trailing" secondItem="hjt-2P-bHn" secondAttribute="trailing" constant="8" id="NJR-5I-LfW"/>
+                                        <constraint firstItem="8wo-cx-hq0" firstAttribute="leading" secondItem="WSi-sc-4Jc" secondAttribute="leading" constant="87" id="bP2-lt-eq0"/>
+                                        <constraint firstItem="hjt-2P-bHn" firstAttribute="top" secondItem="WSi-sc-4Jc" secondAttribute="top" constant="1" id="bVL-8a-H7E"/>
+                                        <constraint firstItem="V0G-bC-Gw9" firstAttribute="top" secondItem="8wo-cx-hq0" secondAttribute="bottom" constant="8" id="kE7-HP-cVy"/>
+                                        <constraint firstItem="8wo-cx-hq0" firstAttribute="top" secondItem="hjt-2P-bHn" secondAttribute="bottom" constant="8" id="myh-qR-MrE"/>
+                                        <constraint firstItem="hjt-2P-bHn" firstAttribute="leading" secondItem="WSi-sc-4Jc" secondAttribute="leading" constant="8" id="pyb-M2-z5G"/>
+                                        <constraint firstItem="8wo-cx-hq0" firstAttribute="top" secondItem="hjt-2P-bHn" secondAttribute="bottom" constant="8" id="rVH-1S-TqY"/>
+                                        <constraint firstItem="V0G-bC-Gw9" firstAttribute="top" secondItem="8wo-cx-hq0" secondAttribute="bottom" constant="8" id="s5i-X7-fVq"/>
+                                        <constraint firstAttribute="trailing" secondItem="V0G-bC-Gw9" secondAttribute="trailing" constant="8" id="w4s-d9-SP2"/>
+                                        <constraint firstAttribute="trailing" secondItem="8wo-cx-hq0" secondAttribute="trailing" constant="87" id="xRt-cX-DoJ"/>
+                                        <constraint firstItem="09Z-n4-uo5" firstAttribute="top" secondItem="V0G-bC-Gw9" secondAttribute="bottom" constant="8" id="y5t-2v-ren"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
                                     <outlet property="eventName" destination="hjt-2P-bHn" id="UCl-br-Q8f"/>
+                                    <outlet property="image" destination="8wo-cx-hq0" id="d0H-6e-ujx"/>
                                     <outlet property="information" destination="V0G-bC-Gw9" id="VvG-6c-jPo"/>
                                     <segue destination="HYN-wY-fx7" kind="show" id="Fqv-YQ-wGf"/>
                                 </connections>
@@ -865,6 +897,7 @@ Above all, we want you to have a good time during recruitment, so take advantage
     </scenes>
     <resources>
         <image name="UINavBarItem_Menu_2x.png" width="32" height="32"/>
+        <image name="acacia-flag.png" width="300" height="135"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="33V-wk-csw"/>

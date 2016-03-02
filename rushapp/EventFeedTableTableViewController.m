@@ -12,7 +12,6 @@
 #import "Database.h"
 #import "EventFeedTableViewCell.h"
 
-
 @implementation EventFeedTableTableViewController
 
 - (void)viewWillAppear {
@@ -71,10 +70,9 @@
     cell.eventName.text = [self.eventList[indexPath.row] eventName];
     cell.information.text = [self.eventList[indexPath.row] place];
     UIImage * image = [UIImage imageNamed:[self.eventList[indexPath.row] imageName]];
-    cell.imageView.image = image;
+    //cell.imageView.image = image;
     return cell;
 }
-
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

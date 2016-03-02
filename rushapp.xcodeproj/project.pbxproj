@@ -30,7 +30,7 @@
 		74B01ABB1BE6E6F30030EA9B /* FraternityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B01ABA1BE6E6F30030EA9B /* FraternityListViewController.m */; };
 		74B58EA21BFA8B8500EB7404 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B58EA11BFA8B8500EB7404 /* MapKit.framework */; };
 		74D5A4A01C667AFA00FE1F47 /* EventFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D5A49F1C667AFA00FE1F47 /* EventFeedTableViewCell.m */; };
-		74D5A4A31C667F5800FE1F47 /* acacia-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D5A4A21C667F5800FE1F47 /* acacia-flag.png */; };
+		74D5A4AB1C693D4800FE1F47 /* acacia-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D5A4AA1C693D4800FE1F47 /* acacia-flag.png */; };
 		74E66E011BE6D86E00431B57 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E66E001BE6D86E00431B57 /* Contact.m */; };
 		74E66E041BE6DA2B00431B57 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E66E031BE6DA2B00431B57 /* Database.m */; };
 /* End PBXBuildFile section */
@@ -94,7 +94,7 @@
 		74B58EA11BFA8B8500EB7404 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		74D5A49E1C667AFA00FE1F47 /* EventFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventFeedTableViewCell.h; sourceTree = "<group>"; };
 		74D5A49F1C667AFA00FE1F47 /* EventFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventFeedTableViewCell.m; sourceTree = "<group>"; };
-		74D5A4A21C667F5800FE1F47 /* acacia-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acacia-flag.png"; sourceTree = "<group>"; };
+		74D5A4AA1C693D4800FE1F47 /* acacia-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acacia-flag.png"; sourceTree = "<group>"; };
 		74E66DFF1BE6D84600431B57 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		74E66E001BE6D86E00431B57 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		74E66E021BE6DA0E00431B57 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		74D5A4A11C667F3100FE1F47 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				74D5A4A21C667F5800FE1F47 /* acacia-flag.png */,
+				74D5A4AA1C693D4800FE1F47 /* acacia-flag.png */,
 			);
 			name = images;
 			path = rushapp;
@@ -362,7 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D5A4A31C667F5800FE1F47 /* acacia-flag.png in Resources */,
+				74D5A4AB1C693D4800FE1F47 /* acacia-flag.png in Resources */,
 				7435BDDC1BFD7B7B00E9D0E0 /* It2ScriptV1.js in Resources */,
 				7444B1211C162A4300AE0E07 /* GreekRushApp_SplashScreen_6Plus.png in Resources */,
 				515217D91BE3F04000C29A59 /* Assets.xcassets in Resources */,
